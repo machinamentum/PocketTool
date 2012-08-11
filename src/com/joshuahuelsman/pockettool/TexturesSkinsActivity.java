@@ -13,8 +13,6 @@ package com.joshuahuelsman.pockettool;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import com.snowbound.pockettool.R;
-
 import android.app.TabActivity;
 import android.content.Intent;
 import android.os.Bundle;

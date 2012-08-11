@@ -17,8 +17,6 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import com.snowbound.pockettool.R;
-
 import android.app.ListActivity;
 import android.content.Context;
 import android.content.Intent;

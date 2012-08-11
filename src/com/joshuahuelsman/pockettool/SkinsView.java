@@ -18,8 +18,6 @@ import java.io.InputStream;
 import java.io.OutputStream;
 import java.util.ArrayList;
 
-import com.snowbound.pockettool.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.os.Environment;

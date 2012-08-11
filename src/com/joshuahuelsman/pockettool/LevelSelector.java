@@ -16,14 +16,8 @@ import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.ArrayList;
 
-import org.spout.nbt.CompoundMap;
 import org.spout.nbt.CompoundTag;
-import org.spout.nbt.IntTag;
-import org.spout.nbt.LongTag;
-import org.spout.nbt.StringTag;
 import org.spout.nbt.stream.NBTInputStream;
-
-import com.snowbound.pockettool.R;
 
 import android.app.ListActivity;
 import android.content.Context;
@@ -40,7 +34,6 @@ import android.widget.AdapterView.OnItemClickListener;
 import android.widget.ArrayAdapter;
 import android.widget.ListView;
 import android.widget.TextView;
-import android.widget.Toast;
 
 public class LevelSelector extends ListActivity implements OnItemClickListener {
 	ArrayList<World> list;

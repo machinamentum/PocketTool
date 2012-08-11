@@ -11,8 +11,6 @@
 
 package com.joshuahuelsman.pockettool;
 
-import com.snowbound.pockettool.R;
-
 import android.app.Activity;
 import android.os.Bundle;
 import android.widget.TextView;
