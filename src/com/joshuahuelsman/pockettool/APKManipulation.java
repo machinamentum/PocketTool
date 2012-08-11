@@ -33,7 +33,7 @@ public class APKManipulation {
 	//private static ZipUtils zipu;
 	//private Context context;
 	public final static File ptdir = new File(Environment.getExternalStorageDirectory(),
-			"/Android/data/com.snowbound.pockettool/");
+			"/Android/data/com.joshuahuelsman.pockettool/");
 	private static Activity main;
 	public APKManipulation(Activity maina) {
 		//zipu = new ZipUtils();

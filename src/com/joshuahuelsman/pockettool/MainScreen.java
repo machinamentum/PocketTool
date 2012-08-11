@@ -10,8 +10,6 @@
  *******************************************************************************/
 package com.joshuahuelsman.pockettool;
 
-import com.snowbound.pockettool.R;
-
 import android.app.Activity;
 import android.content.Intent;
 import android.os.Bundle;

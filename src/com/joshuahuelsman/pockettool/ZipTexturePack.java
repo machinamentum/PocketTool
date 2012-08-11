@@ -111,18 +111,10 @@ public class ZipTexturePack {
 		//GUI
 		else if(entry.getName().contains("background.png")){
 			outputFile = new File(gui, "background.png");
-		}else if(entry.getName().contains("123123.png")){
-			outputFile = new File(gui, "123123.png");
 		}else if(entry.getName().contains("bg32.png")){
 			outputFile = new File(gui, "bg32.png");
-		}else if(entry.getName().contains("button_pause.png")){
-			outputFile = new File(gui, "button_pause.png");
 		}else if(entry.getName().contains("default_world.png")){
 			outputFile = new File(gui, "default_world.png");
-		}else if(entry.getName().contains("feedback_fill.png")){
-			outputFile = new File(gui, "feedback_fill.png");
-		}else if(entry.getName().contains("feedback_outer.png")){
-			outputFile = new File(gui, "feedback_outer.png");
 		}else if(entry.getName().contains("touchgui.png")){
 			outputFile = new File(gui, "touchgui.png");
 		}else if(entry.getName().contains("gui.png")){
@@ -143,8 +135,12 @@ public class ZipTexturePack {
 			outputFile = new File(gui, "title.png");
 		}else if(entry.getName().contains("spritesheet.png")){
 			outputFile = new File(gui, "spritesheet.png");
-		}else if(entry.getName().contains("camera.png")){
+		}
+		
+		else if(entry.getName().contains("camera.png")){
 			outputFile = new File(item, "camera.png");
+		}else if(entry.getName().contains("arrows.png")){
+			outputFile = new File(item, "arrows.png");
 		}else if(entry.getName().contains("char.png")){
 			outputFile = new File(mob, "char.png");
 		}else if(entry.getName().contains("chicken.png")){
