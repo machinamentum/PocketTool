@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, PocketToolActivity!</string>
+    <string name="app_name">PocketTool</string>
+    <string-array name="menu">
+        <item >Use Skin</item>
+    </string-array>
+        <string name="disclaimer">Disclaimer: PocketTool is in no way affiliated with the linked websites herein. These are community contributed links.</string>
+        <string name="links">Texture Packs:\n</string>
+
+</resources>

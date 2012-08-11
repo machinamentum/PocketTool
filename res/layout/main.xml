@@ -1,0 +1,39 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/toolkitbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Tool Kit" />
+        
+         <Button
+            android:id="@+id/leveleditorbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Level Editor" />
+        
+         <Button
+            android:id="@+id/linksbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Links" />
+
+        <Button
+            android:id="@+id/installdownloadbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Install Downloaded Content" />
+        
+       
+        
+       
+      
+    </LinearLayout>

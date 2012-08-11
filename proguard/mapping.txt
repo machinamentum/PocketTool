@@ -1,0 +1,617 @@
+com.snowbound.pockettool.APKManipulation -> com.snowbound.pockettool.a:
+    java.lang.String MINECRAFT_APK_PATH -> d
+    int minever -> a
+    int USE_DEMO -> b
+    java.io.File ptdir -> c
+    android.app.Activity main -> e
+    void uninstall() -> a
+    void install() -> b
+    void update() -> c
+    void addChar(java.io.File) -> a
+    void addTexture(java.io.File) -> b
+    void refresh() -> d
+com.snowbound.pockettool.AboutSimpleNBT -> com.snowbound.pockettool.AboutSimpleNBT:
+    void onCreate(android.os.Bundle) -> onCreate
+com.snowbound.pockettool.DownloadMinecraftNetSkin -> com.snowbound.pockettool.DownloadMinecraftNetSkin:
+    android.widget.EditText editText -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+com.snowbound.pockettool.IPPatchActivity -> com.snowbound.pockettool.IPPatchActivity:
+    byte[] defaultip -> a
+    android.widget.EditText IPText -> d
+    java.io.File patchesdir -> b
+    com.snowbound.pockettool.APKManipulation apkm -> c
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.snowbound.pockettool.ImageAdapter -> com.snowbound.pockettool.b:
+    java.util.ArrayList array -> a
+    android.content.Context mContext -> b
+    int getCount() -> getCount
+    java.lang.Object getItem(int) -> getItem
+    long getItemId(int) -> getItemId
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.snowbound.pockettool.LevelEditor -> com.snowbound.pockettool.LevelEditor:
+    com.snowbound.pockettool.World mWorld -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onDestroy() -> onDestroy
+    void setWorld(com.snowbound.pockettool.World) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.snowbound.pockettool.LevelSelector -> com.snowbound.pockettool.LevelSelector:
+    java.util.ArrayList list -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onItemClick(android.widget.AdapterView,android.view.View,int,long) -> onItemClick
+    com.snowbound.pockettool.World getWorld(java.lang.String) -> a
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.snowbound.pockettool.LevelSelector$1 -> com.snowbound.pockettool.c:
+    com.snowbound.pockettool.LevelSelector this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.snowbound.pockettool.Links -> com.snowbound.pockettool.Links:
+    void onCreate(android.os.Bundle) -> onCreate
+com.snowbound.pockettool.LivePreview -> com.snowbound.pockettool.LivePreview:
+    java.util.ArrayList textures -> a
+    java.util.ArrayList skinarray -> b
+    android.widget.ArrayAdapter ta -> c
+    android.widget.ArrayAdapter ia -> d
+    com.snowbound.pockettool.APKManipulation apkm -> i
+    void onCreate(android.os.Bundle) -> onCreate
+    java.util.ArrayList getSkinsList() -> c
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.snowbound.pockettool.LivePreview$1 -> com.snowbound.pockettool.d:
+    com.snowbound.pockettool.LivePreview this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.snowbound.pockettool.LivePreview$2 -> com.snowbound.pockettool.e:
+    com.snowbound.pockettool.LivePreview this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.snowbound.pockettool.MainScreen -> com.snowbound.pockettool.MainScreen:
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+com.snowbound.pockettool.Manual -> com.snowbound.pockettool.Manual:
+    java.lang.String manualtext -> a
+    void onCreate(android.os.Bundle) -> onCreate
+com.snowbound.pockettool.PTPatch -> com.snowbound.pockettool.f:
+    byte[] magic -> a
+    byte[] op_codes -> b
+    byte[] patch_array -> e
+    int count -> f
+    java.lang.String location -> g
+    java.lang.String name -> c
+    android.content.Context con -> h
+    com.snowbound.pockettool.PTPatch$Header mHeader -> d
+    void loadPatch() -> a
+    byte[] getIndices() -> d
+    void checkMagic() -> b
+    void checkMinecraftVersion() -> c
+    byte[] getNextData() -> e
+    int getDataLength() -> f
+    void applyPatch(java.io.File) -> a
+    byte[] intToByteArray(int) -> a
+    int byteArrayToInt(byte[]) -> a
+    byte[] readPatch(java.lang.String) -> a
+    void diff(java.lang.String,java.lang.String,java.io.File) -> a
+    byte[] generateIndices(byte[][]) -> a
+com.snowbound.pockettool.PTPatch$Header -> com.snowbound.pockettool.g:
+    byte[] magic -> a
+    int minecraft_ver -> b
+    int num_patches -> c
+    byte[] indices -> d
+    com.snowbound.pockettool.PTPatch this$0 -> e
+com.snowbound.pockettool.PatchActivity -> com.snowbound.pockettool.PatchActivity:
+    java.util.ArrayList patches -> a
+    com.snowbound.pockettool.APKManipulation apkm -> b
+    java.io.File undofold -> c
+    java.io.File old -> d
+    void onCreate(android.os.Bundle) -> onCreate
+    java.util.ArrayList getPTPatches() -> a
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.snowbound.pockettool.PatchActivity$1 -> com.snowbound.pockettool.h:
+    com.snowbound.pockettool.PatchActivity this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.snowbound.pockettool.RefreshThread -> com.snowbound.pockettool.i:
+    int CREATED_DEFAULTS -> a
+    com.snowbound.pockettool.APKManipulation apkm -> b
+    android.app.Activity act -> c
+    android.os.Handler handler -> d
+    void run() -> run
+com.snowbound.pockettool.RefreshThread$1 -> com.snowbound.pockettool.j:
+    com.snowbound.pockettool.RefreshThread this$0 -> a
+    void handleMessage(android.os.Message) -> handleMessage
+com.snowbound.pockettool.Settings -> com.snowbound.pockettool.Settings:
+    int disableUninstall -> a
+    int hasSeenManual -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onCheckboxClicked(android.view.View) -> onCheckboxClicked
+    void onDestroy() -> onDestroy
+    void saveSettings() -> a
+com.snowbound.pockettool.Skin -> com.snowbound.pockettool.k:
+    java.lang.String name -> a
+    java.lang.String path -> b
+    boolean extrn -> c
+com.snowbound.pockettool.SkinsView -> com.snowbound.pockettool.SkinsView:
+    java.util.ArrayList skinarray -> a
+    com.snowbound.pockettool.APKManipulation apkm -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+com.snowbound.pockettool.TexturePack -> com.snowbound.pockettool.l:
+    java.lang.String name -> a
+    java.lang.String path -> b
+    boolean isZip -> c
+com.snowbound.pockettool.TexturesSkinsActivity -> com.snowbound.pockettool.TexturesSkinsActivity:
+    int MODE_DOWNLOAD -> a
+    com.snowbound.pockettool.APKManipulation apkm -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.snowbound.pockettool.TexturesView -> com.snowbound.pockettool.TexturesView:
+    java.util.ArrayList textures -> a
+    com.snowbound.pockettool.APKManipulation apkm -> b
+    void onCreate(android.os.Bundle) -> onCreate
+    void onCreateContextMenu(android.view.ContextMenu,android.view.View,android.view.ContextMenu$ContextMenuInfo) -> onCreateContextMenu
+    boolean onContextItemSelected(android.view.MenuItem) -> onContextItemSelected
+com.snowbound.pockettool.TexturesView$1 -> com.snowbound.pockettool.m:
+    com.snowbound.pockettool.TexturesView this$0 -> a
+    android.view.View getView(int,android.view.View,android.view.ViewGroup) -> getView
+com.snowbound.pockettool.ToolKit -> com.snowbound.pockettool.ToolKit:
+    java.util.List pinfo -> b
+    com.snowbound.pockettool.APKManipulation apkm -> c
+    android.app.ProgressDialog dialog -> a
+    void onCreate(android.os.Bundle) -> onCreate
+    void onClick(android.view.View) -> onClick
+    void getSettings() -> a
+    void onDestroy() -> onDestroy
+    boolean onCreateOptionsMenu(android.view.Menu) -> onCreateOptionsMenu
+    boolean onOptionsItemSelected(android.view.MenuItem) -> onOptionsItemSelected
+com.snowbound.pockettool.World -> com.snowbound.pockettool.n:
+    int gameType -> a
+    long lastPlayed -> b
+    java.lang.String levelName -> c
+    int platform -> d
+    com.snowbound.pockettool.World$Player player -> e
+    long randomSeed -> f
+    long sizeOnDisk -> g
+    int spawnX -> h
+    int spawnY -> i
+    int spawnZ -> j
+    int storageVersion -> k
+    long time -> l
+    java.lang.String path -> m
+    java.lang.String name -> n
+com.snowbound.pockettool.World$Player -> com.snowbound.pockettool.o:
+    int dimension -> a
+    com.snowbound.pockettool.World$Player$Inventory inventory -> b
+    int score -> c
+    com.snowbound.pockettool.World$Player$Position pos -> d
+    com.snowbound.pockettool.World$Player$Motion motion -> e
+    com.snowbound.pockettool.World$Player$Rotation rotation -> f
+    float fallDistance -> g
+    short fire -> h
+    short air -> i
+    byte onGround -> j
+    short attackTime -> k
+    short deathTime -> l
+    short health -> m
+    short hurtTime -> n
+    com.snowbound.pockettool.World this$0 -> o
+com.snowbound.pockettool.World$Player$Inventory -> com.snowbound.pockettool.p:
+    java.util.ArrayList slots -> a
+    com.snowbound.pockettool.World$Player this$1 -> b
+    org.spout.nbt.ListTag getTag() -> a
+com.snowbound.pockettool.World$Player$Inventory$Slot -> com.snowbound.pockettool.q:
+    byte slotid -> a
+    short itemid -> b
+    byte count -> c
+    short damage -> d
+    com.snowbound.pockettool.World$Player$Inventory this$2 -> e
+com.snowbound.pockettool.World$Player$Motion -> com.snowbound.pockettool.r:
+    float dx -> a
+    float dy -> b
+    float dz -> c
+    com.snowbound.pockettool.World$Player this$1 -> d
+com.snowbound.pockettool.World$Player$Position -> com.snowbound.pockettool.s:
+    float x -> a
+    float y -> b
+    float z -> c
+    com.snowbound.pockettool.World$Player this$1 -> d
+com.snowbound.pockettool.World$Player$Rotation -> com.snowbound.pockettool.t:
+    float yaw -> a
+    float pitch -> b
+    com.snowbound.pockettool.World$Player this$1 -> c
+com.snowbound.pockettool.ZipTexturePack -> com.snowbound.pockettool.u:
+    java.io.File assets -> a
+    java.io.File font -> b
+    java.io.File gui -> c
+    java.io.File item -> d
+    java.io.File mob -> e
+    java.io.File lang -> f
+    java.io.File res -> g
+    java.io.File drawable -> h
+    java.io.File drawable_hdpi -> i
+    java.io.File drawable_ldpi -> j
+    java.io.File drawable_mdpi -> k
+    java.io.File drawable_xhdpi -> l
+    void unzip(java.io.File,java.io.File) -> a
+    void copy(java.io.InputStream,java.io.OutputStream) -> a
+com.snowbound.pockettool.ZipThread -> com.snowbound.pockettool.v:
+    java.io.File signapk -> a
+    java.io.File tempfold -> b
+    java.io.File newapk -> c
+    com.snowbound.pockettool.APKManipulation apkm -> d
+    void run() -> run
+com.snowbound.pockettool.ZipUtils -> com.snowbound.pockettool.w:
+    void unzipArchive(java.io.File,java.io.File) -> a
+    void createDir(java.io.File) -> b
+    void copy(java.io.InputStream,java.io.OutputStream) -> a
+    void copyFolder(java.io.File,java.io.File) -> b
+    void zip(java.io.File,java.io.File,java.util.zip.ZipOutputStream) -> a
+    boolean deleteDir(java.io.File) -> a
+kellinwood.logging.LoggerFactory -> a.a.a:
+    kellinwood.logging.LoggerInterface getLogger$5c878ef0() -> a
+kellinwood.logging.LoggerInterface -> a.a.b:
+kellinwood.logging.LoggerManager -> a.a.c:
+    kellinwood.logging.LoggerFactory factory -> a
+    java.util.Map loggers -> b
+    kellinwood.logging.LoggerInterface getLogger(java.lang.String) -> a
+kellinwood.logging.NullLoggerFactory -> a.a.d:
+    kellinwood.logging.LoggerInterface logger -> a
+    kellinwood.logging.LoggerInterface getLogger$5c878ef0() -> a
+kellinwood.logging.NullLoggerFactory$1 -> a.a.e:
+kellinwood.security.zipsigner.AutoKeyException -> a.b.a.a:
+kellinwood.security.zipsigner.Base64 -> a.b.a.b:
+    java.lang.reflect.Method aMethod -> a
+    java.lang.Object bEncoder -> b
+    java.lang.reflect.Method bMethod -> c
+    kellinwood.logging.LoggerInterface logger -> d
+    java.lang.String encode(byte[]) -> a
+kellinwood.security.zipsigner.KeySet -> a.b.a.c:
+    java.lang.String name -> a
+    java.security.cert.X509Certificate publicKey -> b
+    java.security.PrivateKey privateKey -> c
+    byte[] sigBlockTemplate -> d
+kellinwood.security.zipsigner.ProgressEvent -> a.b.a.d:
+    java.lang.String message -> a
+    int percentDone -> b
+    int priority -> c
+    void setMessage(java.lang.String) -> a
+    void setPercentDone(int) -> a
+    void setPriority(int) -> b
+kellinwood.security.zipsigner.ProgressHelper -> a.b.a.e:
+    int progressTotalItems -> a
+    int progressCurrentItem -> b
+    kellinwood.security.zipsigner.ProgressEvent progressEvent -> c
+    java.util.ArrayList listeners -> d
+    void initProgress() -> a
+    void setProgressTotalItems(int) -> a
+    void setProgressCurrentItem$13462e() -> b
+    void progress(int,java.lang.String) -> a
+kellinwood.security.zipsigner.ZipSignature -> a.b.a.f:
+    byte[] beforeAlgorithmIdBytes -> a
+    byte[] algorithmIdBytes -> b
+    byte[] afterAlgorithmIdBytes -> c
+    javax.crypto.Cipher cipher -> d
+    java.security.MessageDigest md -> e
+kellinwood.security.zipsigner.ZipSigner -> a.b.a.g:
+    boolean canceled -> h
+    kellinwood.security.zipsigner.ProgressHelper progressHelper -> i
+    kellinwood.logging.LoggerInterface log -> a
+    java.util.regex.Pattern stripPattern -> j
+    java.util.Map loadedKeys -> b
+    kellinwood.security.zipsigner.KeySet keySet -> c
+    java.lang.String[] SUPPORTED_KEY_MODES -> d
+    java.lang.String keymode -> e
+    java.util.Map autoKeyDetect -> f
+    kellinwood.security.zipsigner.ZipSigner$AutoKeyObservable autoKeyObservable -> g
+    kellinwood.logging.LoggerInterface getLogger() -> a
+    void setKeymode(java.lang.String) -> a
+    java.lang.String autoDetectKey(java.lang.String,java.util.Map) -> a
+    void loadKeys(java.lang.String) -> b
+    java.security.cert.X509Certificate readPublicKey(java.net.URL) -> a
+    java.security.spec.KeySpec decryptPrivateKey$17d23c89(byte[]) -> a
+    byte[] readContentAsBytes(java.io.InputStream) -> a
+    java.security.PrivateKey readPrivateKey$33735b37(java.net.URL) -> b
+    java.util.jar.Manifest addDigestsToManifest(java.util.Map) -> a
+    void generateSignatureFile(java.util.jar.Manifest,java.io.OutputStream) -> a
+    void copyFiles(java.util.jar.Manifest,java.util.Map,kellinwood.zipio.ZipOutput,long) -> a
+    void copyFiles(java.util.Map,kellinwood.zipio.ZipOutput) -> a
+    void signZip(java.lang.String,java.lang.String) -> a
+    void signZip(java.util.Map,java.io.OutputStream,java.lang.String) -> a
+kellinwood.security.zipsigner.ZipSigner$AutoKeyObservable -> a.b.a.h:
+    void notifyObservers(java.lang.Object) -> notifyObservers
+kellinwood.sigblock.SignatureBlockWriter -> a.c.a:
+kellinwood.zipio.CentralEnd -> a.d.a:
+    int signature -> a
+    short numberThisDisk -> b
+    short centralStartDisk -> c
+    short numCentralEntries -> d
+    short totalCentralEntries -> e
+    int centralDirectorySize -> f
+    int centralStartOffset -> g
+    java.lang.String fileComment -> h
+    kellinwood.logging.LoggerInterface log -> i
+    kellinwood.zipio.CentralEnd read(kellinwood.zipio.ZipInput) -> a
+    kellinwood.logging.LoggerInterface getLogger() -> a
+    void write(kellinwood.zipio.ZipOutput) -> a
+kellinwood.zipio.ZioEntry -> a.d.b:
+    kellinwood.zipio.ZipInput zipInput -> a
+    short versionMadeBy -> b
+    short versionRequired -> c
+    short generalPurposeBits -> d
+    short compression -> e
+    short modificationTime -> f
+    short modificationDate -> g
+    int crc32 -> h
+    int compressedSize -> i
+    int size -> j
+    java.lang.String filename -> k
+    byte[] extraData -> l
+    short numAlignBytes -> m
+    java.lang.String fileComment -> n
+    short diskNumberStart -> o
+    short internalAttributes -> p
+    int externalAttributes -> q
+    int localHeaderOffset -> r
+    long dataPosition -> s
+    byte[] data -> t
+    kellinwood.zipio.ZioEntryOutputStream entryOut -> u
+    byte[] alignBytes -> v
+    kellinwood.logging.LoggerInterface log -> w
+    kellinwood.logging.LoggerInterface getLogger() -> j
+    void readLocalHeader() -> a
+    void writeLocalEntry(kellinwood.zipio.ZipOutput) -> a
+    kellinwood.zipio.ZioEntry read(kellinwood.zipio.ZipInput) -> a
+    byte[] getData() -> b
+    java.io.InputStream getInputStream() -> c
+    java.io.OutputStream getOutputStream() -> d
+    void write(kellinwood.zipio.ZipOutput) -> b
+    void setTime(long) -> a
+    boolean isDirectory() -> e
+    java.lang.String getName() -> f
+    int getCompressedSize() -> g
+    long getDataPosition() -> h
+    kellinwood.zipio.ZipInput getZipInput() -> i
+kellinwood.zipio.ZioEntryInputStream -> a.d.c:
+    java.io.RandomAccessFile raf -> a
+    int size -> b
+    int offset -> c
+    kellinwood.logging.LoggerInterface log -> d
+    boolean debug -> e
+    boolean returnDummyByte -> f
+    java.io.OutputStream monitor -> g
+    void setReturnDummyByte$1385ff() -> a
+    void close() -> close
+    boolean markSupported() -> markSupported
+    int available() -> available
+    int read() -> read
+    int read(byte[],int,int) -> read
+    int readBytes(byte[],int,int) -> a
+    int read(byte[]) -> read
+    long skip(long) -> skip
+kellinwood.zipio.ZioEntryOutputStream -> a.d.d:
+    int size -> a
+    java.util.zip.CRC32 crc -> b
+    int crcValue -> c
+    java.io.OutputStream wrapped -> d
+    java.io.OutputStream downstream -> e
+    void close() -> close
+    int getCRC() -> a
+    void flush() -> flush
+    void write(byte[]) -> write
+    void write(byte[],int,int) -> write
+    void write(int) -> write
+    int getSize() -> b
+    java.io.OutputStream getWrappedStream() -> c
+kellinwood.zipio.ZipInput -> a.d.e:
+    kellinwood.logging.LoggerInterface log -> a
+    java.lang.String inputFilename -> b
+    java.io.RandomAccessFile in -> c
+    long fileLength -> d
+    int scanIterations -> e
+    java.util.Map zioEntries -> f
+    kellinwood.zipio.CentralEnd centralEnd -> g
+    kellinwood.zipio.ZipInput read(java.lang.String) -> a
+    java.util.Map getEntries() -> a
+    long getFilePointer() -> b
+    void seek(long) -> a
+    int readInt() -> c
+    short readShort() -> d
+    java.lang.String readString(int) -> a
+    byte[] readBytes(int) -> b
+kellinwood.zipio.ZipOutput -> a.d.f:
+    kellinwood.logging.LoggerInterface log -> a
+    java.io.OutputStream out -> b
+    int filePointer -> c
+    java.util.List entriesWritten -> d
+    java.util.Set namesWritten -> e
+    kellinwood.logging.LoggerInterface getLogger() -> c
+    void write(kellinwood.zipio.ZioEntry) -> a
+    void close() -> a
+    int getFilePointer() -> b
+    void writeInt(int) -> a
+    void writeShort(short) -> a
+    void writeString(java.lang.String) -> a
+    void writeBytes(byte[]) -> a
+    void writeBytes$1cf967a4(byte[],int) -> a
+org.spout.nbt.ByteArrayTag -> b.a.a.a:
+    byte[] value -> a
+    byte[] getValue() -> a
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.ByteTag -> b.a.a.b:
+    byte value -> a
+    java.lang.Byte getValue() -> a
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.CompoundMap -> b.a.a.c:
+    java.util.Map map -> a
+    boolean sort -> b
+    boolean reverse -> c
+    org.spout.nbt.Tag put(org.spout.nbt.Tag) -> a
+    void clear() -> clear
+    boolean containsKey(java.lang.Object) -> containsKey
+    boolean containsValue(java.lang.Object) -> containsValue
+    java.util.Set entrySet() -> entrySet
+    org.spout.nbt.Tag get(java.lang.Object) -> a
+    boolean isEmpty() -> isEmpty
+    java.util.Set keySet() -> keySet
+    org.spout.nbt.Tag put(java.lang.String,org.spout.nbt.Tag) -> a
+    void putAll(java.util.Map) -> putAll
+    int size() -> size
+    java.util.Collection values() -> values
+    java.util.Iterator iterator() -> iterator
+    boolean equals(java.lang.Object) -> equals
+    java.lang.Object get(java.lang.Object) -> get
+    java.lang.Object remove(java.lang.Object) -> remove
+    java.lang.Object put(java.lang.Object,java.lang.Object) -> put
+org.spout.nbt.CompoundTag -> b.a.a.d:
+    org.spout.nbt.CompoundMap value -> a
+    org.spout.nbt.CompoundMap getValue() -> a
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.DoubleTag -> b.a.a.e:
+    double value -> a
+    java.lang.Double getValue() -> a
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.EndTag -> b.a.a.f:
+    java.lang.Object getValue() -> b
+    java.lang.String toString() -> toString
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.FloatTag -> b.a.a.g:
+    float value -> a
+    java.lang.Float getValue() -> a
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.IntArrayTag -> b.a.a.h:
+    int[] value -> a
+    int[] getValue() -> a
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.IntTag -> b.a.a.i:
+    int value -> a
+    java.lang.Integer getValue() -> a
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.ListTag -> b.a.a.j:
+    java.lang.Class type -> a
+    java.util.List value -> b
+    java.lang.Class getType() -> a
+    java.util.List getValue() -> d
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.LongTag -> b.a.a.k:
+    long value -> a
+    java.lang.Long getValue() -> a
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.NBTConstants -> b.a.a.l:
+    java.nio.charset.Charset CHARSET -> a
+org.spout.nbt.NBTUtils -> b.a.a.m:
+    int getTypeCode(java.lang.Class) -> a
+org.spout.nbt.ShortArrayTag -> b.a.a.n:
+    short[] value -> a
+    short[] getValue() -> a
+    java.lang.String toString() -> toString
+    boolean equals(java.lang.Object) -> equals
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.ShortTag -> b.a.a.o:
+    short value -> a
+    java.lang.Short getValue() -> a
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.StringTag -> b.a.a.p:
+    java.lang.String value -> a
+    java.lang.String getValue() -> a
+    java.lang.String toString() -> toString
+    java.lang.Object getValue() -> b
+    org.spout.nbt.Tag clone() -> c
+org.spout.nbt.Tag -> b.a.a.q:
+    java.lang.String name -> a
+    java.lang.String getName() -> e
+    java.lang.Object getValue() -> b
+    boolean equals(java.lang.Object) -> equals
+    org.spout.nbt.Tag clone() -> c
+    java.lang.Object clone() -> clone
+    int compareTo(java.lang.Object) -> compareTo
+org.spout.nbt.stream.NBTInputStream -> b.a.a.a.a:
+    java.io.DataInputStream is -> a
+    boolean littleEndian -> b
+    org.spout.nbt.Tag readTag() -> a
+    org.spout.nbt.Tag readTag(int) -> a
+    org.spout.nbt.Tag readTagPayload(int,java.lang.String,int) -> a
+    void close() -> close
+org.spout.nbt.stream.NBTOutputStream -> b.a.a.a.b:
+    java.io.DataOutputStream os -> a
+    boolean littleEndian -> b
+    void writeTag(org.spout.nbt.Tag) -> a
+    void writeTagPayload(org.spout.nbt.Tag) -> b
+    void close() -> close
+sge.engine.gl.GLRenderer -> sge.engine.a.a:
+    sge.engine.node.Node rootNode -> a
+    sge.engine.realism.ProjectRealismActivity realism -> b
+    void onDrawFrame(javax.microedition.khronos.opengles.GL10) -> onDrawFrame
+    void onSurfaceChanged(javax.microedition.khronos.opengles.GL10,int,int) -> onSurfaceChanged
+    void onSurfaceCreated(javax.microedition.khronos.opengles.GL10,javax.microedition.khronos.egl.EGLConfig) -> onSurfaceCreated
+    void setRootNode(sge.engine.node.Node) -> a
+sge.engine.gl.GLView -> sge.engine.a.b:
+    sge.engine.gl.GLRenderer renderer -> a
+    void setRootNode(sge.engine.node.Node) -> a
+sge.engine.model.Model -> sge.engine.b.a:
+    int USE_ROTATION -> a
+    int USE_TRANSLATION -> b
+    float rot_angle -> c
+    float rot_x -> d
+    float rot_y -> e
+    float rot_z -> f
+    float trans_x -> g
+    float trans_y -> h
+    float trans_z -> i
+    void draw(javax.microedition.khronos.opengles.GL10) -> a
+    void rotate$4098370b(float) -> a
+    void translate$483d242b() -> a
+sge.engine.model.Steve -> sge.engine.b.b:
+    android.graphics.Bitmap skin -> j
+    float[] head -> q
+    byte[] indices -> r
+    java.nio.FloatBuffer vfBuff -> k
+    java.nio.ByteBuffer isBuff -> l
+    int[] textures -> m
+    float[] textCoords -> n
+    java.nio.FloatBuffer textureBuffer -> o
+    boolean initialize -> p
+    void loadDefaultTexture() -> b
+    void draw(javax.microedition.khronos.opengles.GL10) -> a
+sge.engine.node.Node -> sge.engine.c.a:
+    java.util.ArrayList children -> a
+    java.util.ArrayList models -> b
+    void attach(sge.engine.model.Model) -> a
+    void draw(javax.microedition.khronos.opengles.GL10) -> a
+sge.engine.realism.ProjectRealismActivity -> sge.engine.realism.ProjectRealismActivity:
+    sge.engine.node.Node rootNode -> e
+    sge.engine.model.Steve steve -> f
+    sge.engine.gl.GLView view -> g
+    float ang -> h
+    void onCreate(android.os.Bundle) -> onCreate
+    void update() -> a
+    void useNewSkin() -> b

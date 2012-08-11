@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.joshuahuelsman.pockettool"
+    android:versionCode="16"
+    android:versionName="1.5.7" >
+
+    <uses-sdk android:minSdkVersion="7" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.INTERNET"/>
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".MainScreen"
+            android:label="@string/app_name" android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".SkinsView"></activity>
+        <activity android:name=".TexturesView" android:theme="@android:style/Theme"></activity>
+        <activity android:name=".Settings"></activity>
+        <activity android:name=".TexturesSkinsActivity"></activity>
+        <activity android:name=".PatchActivity"></activity>
+        <activity android:name=".Manual" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:screenOrientation="landscape" android:name=".LivePreview"></activity>
+        <activity android:name="DownloadMinecraftNetSkin" android:theme="@android:style/Theme.Dialog"></activity>
+        <activity android:name="LevelSelector"></activity>
+        <activity android:name="LevelEditor"></activity>
+        <activity android:name="ToolKit"></activity>
+        <activity android:name="com.snowbound.pockettool.Links"></activity>
+        <activity android:name="IPPatchActivity"></activity>
+        <activity android:theme="@android:style/Theme.Dialog" android:name="AboutSimpleNBT"></activity>
+        
+        
+    </application>
+
+</manifest>

@@ -1,0 +1,38 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/linearLayout1"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/textskinbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Change Textures/Skin" />
+
+        
+
+        <Button
+            android:id="@+id/patchmodbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Patch Mod" />
+        
+         <Button
+            android:id="@+id/ippatchbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Change server IP" />
+
+        <Button
+            android:id="@+id/downloadmcnetskinbutton"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:text="Download minecraft.net skin" />
+        
+
+    </LinearLayout>
