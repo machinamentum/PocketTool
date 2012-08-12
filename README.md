@@ -7,7 +7,9 @@ To create a working build, you will need to download the following and add them 
  * Zip-Signer (http://code.google.com/p/zip-signer/)
  
  
- -----------------------------
- *License*
+-----------------------------
  
- PocketTool is licensed under the Eclipse Public License (http://www.eclipse.org/legal/epl-v10.html)
+PocketTool is licensed under the Eclipse Public License (http://www.eclipse.org/legal/epl-v10.html)
+ 
+ 
+ 

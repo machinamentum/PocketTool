@@ -30,10 +30,10 @@ public final class R {
         public static final int LevelSpawnZEdit=0x7f060012;
         public static final int LevelSpawnZText=0x7f060011;
         public static final int LinearLayout1=0x7f060016;
-        public static final int button1=0x7f060013;
         public static final int checkBox1=0x7f060021;
         public static final int downloadmcnetskin=0x7f060002;
         public static final int downloadmcnetskinbutton=0x7f060027;
+        public static final int editInvButton=0x7f060013;
         public static final int editText1=0x7f060001;
         public static final int frameLayout1=0x7f060023;
         public static final int gridview=0x7f060022;

@@ -112,9 +112,9 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/button1"
+            android:id="@+id/editInvButton"
             android:layout_width="212dp"
             android:layout_height="wrap_content"
-            android:text="Edit Player Attributes" />
+            android:text="Edit Inventory" />
         
     </LinearLayout>

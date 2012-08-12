@@ -35,6 +35,7 @@
         <activity android:name="com.snowbound.pockettool.Links"></activity>
         <activity android:name="IPPatchActivity"></activity>
         <activity android:theme="@android:style/Theme.Dialog" android:name="AboutSimpleNBT"></activity>
+        <activity android:name="InventoryEditor"></activity>
         
         
     </application>

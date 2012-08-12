@@ -15,10 +15,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
+import android.view.View.OnClickListener;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-public class LevelEditor extends Activity {
+public class LevelEditor extends Activity implements OnClickListener {
 	private static World mWorld;
 	@Override
 	public void onCreate(Bundle savedInstanceState){
@@ -46,6 +49,9 @@ public class LevelEditor extends Activity {
 		SpawnXEdit.setText("" + mWorld.spawnX);
 		SpawnYEdit.setText("" + mWorld.spawnY);
 		SpawnZEdit.setText("" + mWorld.spawnZ);
+		
+		Button editInv = (Button)findViewById(R.id.editInvButton);
+		editInv.setOnClickListener(this);
 	}
 	
 	@Override
@@ -84,6 +90,16 @@ public class LevelEditor extends Activity {
 	    }else{
 	    	return super.onOptionsItemSelected(item);
 	    }
+		
+	}
+
+	public void onClick(View v) {
+		if(v.getId() == R.id.editInvButton)
+		{
+			Intent i = new Intent(this,InventoryEditor.class);
+			InventoryEditor.setWorld(mWorld);
+			startActivity(i);
+		}
 		
 	}
 }
