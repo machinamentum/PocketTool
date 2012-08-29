@@ -60,7 +60,7 @@ public class IPPatchActivity extends Activity implements OnClickListener {
 				patch.checkMagic();
 				patch.checkMinecraftVersion();
 				patch.applyPatch(f);
-				Toast.makeText(this, "Done patching", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, R.string.done_patching, Toast.LENGTH_SHORT).show();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
@@ -84,9 +84,9 @@ public class IPPatchActivity extends Activity implements OnClickListener {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    //MenuInflater inflater = getMenuInflater();
-	    menu.add("Apply Changes");
-	    menu.add("Manual");
-	    menu.add("Settings");
+	    menu.add(R.string.apply_changes);
+	    menu.add(R.string.manual);
+	    menu.add(R.string.settings);
 	    return true;
 	}
 	
@@ -94,20 +94,20 @@ public class IPPatchActivity extends Activity implements OnClickListener {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle item selection
-	    if(item.getTitle().equals("Apply Changes")){
+	    if(item.getTitle().equals(this.getResources().getString(R.string.apply_changes))){
 	    	try {
 				apkm.update();
-				Toast.makeText(this, "Please wait...", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, R.string.please_wait, Toast.LENGTH_SHORT).show();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	    	return true;
-	    }else if(item.getTitle().equals("Settings")){
+	    }else if(item.getTitle().equals(this.getResources().getString(R.string.settings))){
 	    	Intent i = new Intent(this, Settings.class);
 	    	startActivity(i);
 	    	return true;
-	    }else if(item.getTitle().equals("Manual")){
+	    }else if(item.getTitle().equals(this.getResources().getString(R.string.manual))){
 	    	Intent i = new Intent(this, Manual.class);
 	    	startActivity(i);
 	    	return true;

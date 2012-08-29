@@ -75,13 +75,13 @@ public class PTPatch {
 			if(patch_array[1] == magic[1]){
 				if(patch_array[2] == magic[2]){
 					if(patch_array[3] == magic[3]){
-						Toast.makeText(con, "Magic Okay!", Toast.LENGTH_SHORT).show();
+						Toast.makeText(con, R.string.magic_ok, Toast.LENGTH_SHORT).show();
 						return;
 					}
 				}
 			}
 		}
-		Toast.makeText(con, "Magic Error!", Toast.LENGTH_SHORT).show();
+		Toast.makeText(con, R.string.magic_error, Toast.LENGTH_SHORT).show();
 	}
 	
 	public void checkMinecraftVersion(){

@@ -10,13 +10,13 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:hint="Enter IP Here" />
+            android:hint="@string/enter_ip" />
         
         <Button
             android:id="@+id/ippatcherbutton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Patch My IP!" />
+            android:text="@string/patch_ip" />
 
  </LinearLayout>

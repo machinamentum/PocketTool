@@ -9,28 +9,28 @@
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Tool Kit" />
+            android:text="@string/toolkit" />
         
          <Button
             android:id="@+id/leveleditorbutton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Level Editor" />
+            android:text="@string/leveleditor" />
         
          <Button
             android:id="@+id/linksbutton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Links" />
+            android:text="@string/links_button_caption" />
 
         <Button
             android:id="@+id/installdownloadbutton"
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:text="Install Downloaded Content" />
+            android:text="@string/install_downloaded_content" />
         
        
         

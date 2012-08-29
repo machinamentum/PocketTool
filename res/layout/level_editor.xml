@@ -115,6 +115,6 @@
             android:id="@+id/editInvButton"
             android:layout_width="212dp"
             android:layout_height="wrap_content"
-            android:text="Edit Inventory" />
+            android:text="@string/edit_inventory" />
         
     </LinearLayout>

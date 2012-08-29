@@ -147,12 +147,12 @@ public class LivePreview extends SGEActivity {
 	public void onCreateContextMenu(ContextMenu menu, View v,
 	    ContextMenuInfo menuInfo) {
 	    //AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
-	    menu.setHeaderTitle("What would you like to do?");
+	    menu.setHeaderTitle(R.string.actions_prompt);
 	    if(v.getId() == R.id.listView1){
-	    	menu.add("Use Skin");
-	    	menu.add("Uninstall Skin");
+	    	menu.add(R.string.use_skin);
+	    	menu.add(R.string.uninstall_skin);
 	    }else if(v.getId() == R.id.listView2){
-	    	menu.add("Use Texture");
+	    	menu.add(R.string.use_texture);
 	    }
 	}
 	
@@ -161,7 +161,7 @@ public class LivePreview extends SGEActivity {
 	public boolean onContextItemSelected(MenuItem item) {
 	    // Here's how you can get the correct item in onContextItemSelected()
 	    AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
-	    if(item.getTitle().equals("Use Skin")){
+	    if(item.getTitle().equals(this.getResources().getString(R.string.use_skin))){
 	    	try {
 				apkm.addChar(new File(skinarray.get(info.position).path));
 				this.useNewSkin();
@@ -170,13 +170,13 @@ public class LivePreview extends SGEActivity {
 			}
 			//Toast.makeText(getApplicationContext(),"Using " +skinarray.get(info.position).name, Toast.LENGTH_SHORT).show();
 	    	return true;
-	    }else if(item.getTitle().equals("Uninstall Skin")){
+	    }else if(item.getTitle().equals(this.getResources().getString(R.string.uninstall_skin))){
 	    	File skin = new File(skinarray.get(info.position).path);
 	    	skin.delete();
 	    	skinarray.remove(info.position);
 	    	ia.notifyDataSetChanged();
 	    	return true;
-	    }else if(item.getTitle().equals("Use Texture")){
+	    }else if(item.getTitle().equals(this.getResources().getString(R.string.use_texture))){
 	    	try {
 				apkm.addTexture(new File(textures.get(info.position).path));
 				this.useNewSkin();
@@ -185,7 +185,7 @@ public class LivePreview extends SGEActivity {
 				e.printStackTrace();
 			}
 			Toast.makeText(getApplicationContext(),
-					"Using " + textures.get(info.position).name,
+					this.getResources().getString(R.string.using_texture) + textures.get(info.position).name,
 					Toast.LENGTH_SHORT).show();
 			return true;
 	    }else{
@@ -197,9 +197,9 @@ public class LivePreview extends SGEActivity {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    //MenuInflater inflater = getMenuInflater();
-	    menu.add("Apply Changes");
-	    menu.add("Manual");
-	    menu.add("Settings");
+	    menu.add(R.string.apply_changes);
+	    menu.add(R.string.manual);
+	    menu.add(R.string.settings);
 	    return true;
 	}
 	
@@ -207,20 +207,20 @@ public class LivePreview extends SGEActivity {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle item selection
-	    if(item.getTitle().equals("Apply Changes")){
+	    if(item.getTitle().equals(this.getResources().getString(R.string.apply_changes))){
 	    	try {
 				apkm.update();
-				Toast.makeText(this, "Please wait...", Toast.LENGTH_SHORT).show();
+				Toast.makeText(this, R.string.please_wait, Toast.LENGTH_SHORT).show();
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
 	    	return true;
-	    }else if(item.getTitle().equals("Settings")){
+	    }else if(item.getTitle().equals(this.getResources().getString(R.string.settings))){
 	    	Intent i = new Intent(this, Settings.class);
 	    	startActivity(i);
 	    	return true;
-	    }else if(item.getTitle().equals("Manual")){
+	    }else if(item.getTitle().equals(this.getResources().getString(R.string.manual))){
 	    	Intent i = new Intent(this, Manual.class);
 	    	startActivity(i);
 	    	return true;

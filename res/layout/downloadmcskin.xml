@@ -9,7 +9,7 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:text="Please Enter minecraft.net username, then click Download."
+        android:text="@string/enter_minecraft_username"
         android:textAppearance="?android:attr/textAppearanceMedium" />
 
     <EditText
@@ -27,6 +27,6 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
          android:layout_margin="20dp"
-        android:text="Download" />
+        android:text="@string/download" />
 
 </LinearLayout>

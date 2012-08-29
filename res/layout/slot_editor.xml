@@ -3,7 +3,9 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent"
     android:orientation="vertical" >
-
+
+
+
     <RelativeLayout
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
@@ -14,7 +16,7 @@
             android:layout_height="wrap_content"
             android:layout_alignParentLeft="true"
             android:layout_centerVertical="true"
-            android:text="Damage"
+            android:text="@string/item_damage"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -37,7 +39,7 @@
             android:layout_above="@+id/damageEdit"
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="38dp"
-            android:text="Count"
+            android:text="@string/item_count"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText
@@ -49,7 +51,10 @@
             android:layout_alignLeft="@+id/damageEdit"
             android:ems="10"
             android:inputType="number" />
-
+
+
+
+
         <TextView
             android:id="@+id/slotidText"
             android:layout_width="wrap_content"
@@ -58,9 +63,10 @@
             android:layout_alignParentTop="true"
             android:layout_alignRight="@+id/textView4"
             android:layout_marginTop="32dp"
-            android:text="slotid"
+            android:text="@string/item_slotid"
             android:textAppearance="?android:attr/textAppearanceMedium" />
-
+
+
         <TextView
             android:id="@+id/textView2"
             android:layout_width="wrap_content"
@@ -68,7 +74,7 @@
             android:layout_above="@+id/countEdit"
             android:layout_alignParentLeft="true"
             android:layout_marginBottom="21dp"
-            android:text="id"
+            android:text="@string/item_id"
             android:textAppearance="?android:attr/textAppearanceMedium" />
 
         <EditText

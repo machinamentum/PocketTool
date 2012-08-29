@@ -105,11 +105,11 @@ public class TexturesView extends ListActivity {
 			ContextMenuInfo menuInfo) {
 		// AdapterView.AdapterContextMenuInfo info =
 		// (AdapterView.AdapterContextMenuInfo)menuInfo;
-		menu.setHeaderTitle("What would you like to do?");
+		menu.setHeaderTitle(R.string.actions_prompt);
 		if (TexturesSkinsActivity.MODE_DOWNLOAD == 1) {
-			menu.add("Install");
+			menu.add(R.string.install_menuitem);
 		} else {
-			menu.add("Use");
+			menu.add(R.string.use_menuitem);
 		}
 	}
 
@@ -118,7 +118,7 @@ public class TexturesView extends ListActivity {
 		// Here's how you can get the correct item in onContextItemSelected()
 		AdapterContextMenuInfo info = (AdapterContextMenuInfo) item
 				.getMenuInfo();
-		if (item.getTitle().equals("Use")) {
+		if (item.getTitle().equals(this.getResources().getString(R.string.use_menuitem))) {
 			try {
 				apkm.addTexture(new File(textures.get(info.position).path));
 			} catch (IOException e) {
@@ -126,16 +126,16 @@ public class TexturesView extends ListActivity {
 				e.printStackTrace();
 			}
 			Toast.makeText(getApplicationContext(),
-					"Using " + textures.get(info.position).name,
+					this.getResources().getString(R.string.using_texture) + textures.get(info.position).name,
 					Toast.LENGTH_SHORT).show();
 			return true;
-		} else if (item.getTitle().equals("Install")) {
+		} else if (item.getTitle().equals(this.getResources().getString(R.string.install_menuitem))) {
 			String dname = textures.get(info.position).name;
 			String fname = dname.substring(0, dname.length() - 4);
 			File src = new File(textures.get(info.position).path);
 			File dest = new File(APKManipulation.ptdir, "/Textures/" + fname);
 			ZipTexturePack.unzip(src, dest);
-			Toast.makeText(getApplicationContext(), "Installed" + fname,
+			Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.installed) + fname,
 					Toast.LENGTH_SHORT).show();
 			return true;
 		} else {
