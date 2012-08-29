@@ -4,7 +4,7 @@
     android:versionCode="16"
     android:versionName="1.5.7" >
 
-    <uses-sdk android:minSdkVersion="7" />
+    <uses-sdk android:minSdkVersion="7" android:targetSdkVersion="14"/>
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
     <uses-permission android:name="android.permission.INTERNET"/>
@@ -32,7 +32,7 @@
         <activity android:name="LevelSelector"></activity>
         <activity android:name="LevelEditor"></activity>
         <activity android:name="ToolKit"></activity>
-        <activity android:name="com.snowbound.pockettool.Links"></activity>
+        <activity android:name="Links"></activity>
         <activity android:name="IPPatchActivity"></activity>
         <activity android:theme="@android:style/Theme.Dialog" android:name="AboutSimpleNBT"></activity>
         <activity android:name="InventoryEditor"></activity>
