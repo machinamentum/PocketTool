@@ -29,7 +29,7 @@ public class Settings extends Activity {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.settings);
 		CheckBox cb = (CheckBox)findViewById(R.id.checkBox1);
-		cb.setText("Disable Uninstall of Minecraft PE");
+		cb.setText(R.string.disable_uninstall_checkbox_text);
 		if(disableUninstall == 1){
 			cb.setChecked(true);
 		}else{
@@ -42,10 +42,10 @@ public class Settings extends Activity {
 	    // Perform action on clicks, depending on whether it's now checked
 	    if (((CheckBox) v).isChecked()) {
 	    	disableUninstall = 1;
-	        Toast.makeText(this, "Disabling Uninstall", Toast.LENGTH_SHORT).show();
+	        Toast.makeText(this, R.string.disabling_uninstall, Toast.LENGTH_SHORT).show();
 	    } else {
 	    	disableUninstall = 0;
-	        Toast.makeText(this, "Enabling Uninstall", Toast.LENGTH_SHORT).show();
+	        Toast.makeText(this, R.string.enabling_uninstall, Toast.LENGTH_SHORT).show();
 	    }
 	}
 	

@@ -138,7 +138,7 @@ public class LevelSelector extends ListActivity implements OnItemClickListener {
 	@Override
 	public boolean onCreateOptionsMenu(Menu menu) {
 	    //MenuInflater inflater = getMenuInflater();
-	    menu.add("About");
+	    menu.add(R.string.about_nbt);
 	    return true;
 	}
 	
@@ -146,7 +146,7 @@ public class LevelSelector extends ListActivity implements OnItemClickListener {
 	@Override
 	public boolean onOptionsItemSelected(MenuItem item) {
 	    // Handle item selection
-	    if(item.getTitle().equals("About")){
+	    if(item.getTitle().equals(this.getResources().getString(R.string.about_nbt))){
 	    	Intent i = new Intent(this, AboutSimpleNBT.class);
 	    	startActivity(i);
 	    	return true;
@@ -155,5 +155,4 @@ public class LevelSelector extends ListActivity implements OnItemClickListener {
 	    }
 		
 	}
-
 }

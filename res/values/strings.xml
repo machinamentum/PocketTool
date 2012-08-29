@@ -8,5 +8,54 @@
     </string-array>
         <string name="disclaimer">Disclaimer: PocketTool is in no way affiliated with the linked websites herein. These are community contributed links.</string>
         <string name="links">Texture Packs:\n</string>
+    <string name="enter_minecraft_username">Please Enter minecraft.net username, then click Download.</string>
+    <string name="download">Download</string>
+    <string name="enter_ip">Enter IP Here</string>
+    <string name="patch_ip">Patch My IP!</string>
+    <string name="toolkit">Tool Kit</string>
+    <string name="leveleditor">Level Editor</string>
+    <string name="links_button_caption">Links</string>
+    <string name="install_downloaded_content">Install Downloaded Content</string>
+    <string name="patch">Patch</string>
+    <string name="change_textures_skin">Change Textures/Skin</string>
+    <string name="patch_mod">Patch Mod</string>
+    <string name="change_server_ip">Change server IP</string>
+    <string name="download_minecraft_skin">Download minecraft.net skin</string>
+    <string name="done_patching">Done patching</string>
+    <string name="apply_changes">Apply Changes</string>
+    <string name="manual">Manual</string>
+    <string name="settings">Settings</string>
+    <string name="please_wait">Please wait...</string>
+    <string name="refreshing_resources">Refreshing Resources...</string>
+    <string name="about_nbt">About</string>
+    <string name="actions_prompt">What would you like to do?</string>
+    <string name="patch_of_course">Patch, of course!</string>
+    <string name="undo">Undo</string>
+    <string name="use_skin">Use Skin</string>
+    <string name="uninstall_skin">Uninstall Skin</string>
+    <string name="use_texture">Use Texture</string>
+    <string name="using_texture">Using </string>
+    <string name="magic_ok">Magic Okay!</string>
+    <string name="magic_error">Magic Error!</string>
+    <string name="disable_uninstall_checkbox_text">Disable Uninstall of Minecraft PE</string>
+    <string name="disabling_uninstall">Disabling Uninstall</string>
+    <string name="enabling_uninstall">Enabling Uninstall</string>
+    <string name="install_menuitem">Install</string>
+    <string name="use_menuitem">Use</string>
+    <string name="skins">Skins</string>
+    <string name="textures">Textures</string>
+    <string name="installed">Installed</string>
+    <string name="edit_inventory">Edit Inventory</string>
+    <string name="item_damage">Damage</string>
+    <string name="item_count">Count</string>
+    <string name="item_slotid">Slot ID</string>
+    <string name="item_id">ID</string>
+    <string name="about_nbt_text">PocketTool uses the SimpleNBT (formally SpoutNBT) library developed by the SpoutDev team.\nSimpleNBT is licensed under the SpoutDev License Version 1.\nFor the full licensing information for SimpleNBT please visit https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
+    <!-- The manual is too long, so I split it uup into several lines. -->
+    <string name="manual_text_part_1">Hello, thank you for using PocketTool!\nTo begin, please download your favorite Minecraft PE skin/texture pack using your device\'s internet browser or using a computer. If you use a computer, please transfer your skin/texture pack to the \"download\" folder of your sdcard.\n\n</string>
+    <string name="manual_text_part_2">You must have Minecraft PE or Minecraft PE Demo installed in order for PocketTool to run correctly.\nLaunch PocketTool.\nInstall Downloaded Skins/Texture Packs:\nClick \"Install Downloaded Content\"\nYou may install a skin by long pressing the skin you wish to install and click \"Install\"\nYou may install a texture pack by long pressing the texture pack name you wish to install and click \"Install\"\nReturn to the MainScreen (hit Back button)\n\n</string>
+    <string name="manual_text_part_3">Use Installed Skins/Texture Packs:\nClick \"Change Textures/Skins\"\nYou may install a skin by long pressing the skin you wish to install and click \"Use\"\nYou may install a texture pack by long pressing the texture pack name you wish to install and click \"Use\"\n\n</string>
+    <string name="manual_text_part_4">Install:\nPress your device\'s \"Menu\" button/key then click \"Apply Changes\"\nConfirm the uninstall. Confirm the install.\nLaunch Minecraft PE (or Demo) and enjoy your new skin and texture pack!</string>
+
 
 </resources>
