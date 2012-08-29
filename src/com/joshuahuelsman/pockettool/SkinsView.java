@@ -86,12 +86,12 @@ public class SkinsView extends Activity {
 	public void onCreateContextMenu(ContextMenu menu, View v,
 	    ContextMenuInfo menuInfo) {
 	    //AdapterView.AdapterContextMenuInfo info = (AdapterView.AdapterContextMenuInfo)menuInfo;
-	    menu.setHeaderTitle("What would you like to do?");
+	    menu.setHeaderTitle(R.string.actions_prompt);
 	    
 	    if(TexturesSkinsActivity.MODE_DOWNLOAD == 1){
-	    	menu.add("Install");
+	    	menu.add(R.string.install_menuitem);
 	    }else{
-	    	menu.add("Use");
+	    	menu.add(R.string.use_menuitem);
 	    }
 	}
 	
@@ -100,16 +100,16 @@ public class SkinsView extends Activity {
 	public boolean onContextItemSelected(MenuItem item) {
 	    // Here's how you can get the correct item in onContextItemSelected()
 	    AdapterContextMenuInfo info = (AdapterContextMenuInfo) item.getMenuInfo();
-	    if(item.getTitle().equals("Use")){
+	    if(item.getTitle().equals(this.getResources().getString(R.string.use_menuitem))){
 	    	try {
 				apkm.addChar(new File(skinarray.get(info.position).path));
 			} catch (IOException e) {
 				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}
-			Toast.makeText(getApplicationContext(),"Using " +skinarray.get(info.position).name, Toast.LENGTH_SHORT).show();
+			Toast.makeText(getApplicationContext(), this.getResources().getString(R.string.using_texture) + skinarray.get(info.position).name, Toast.LENGTH_SHORT).show();
 	    	return true;
-	    }else if(item.getTitle().equals("Install")){
+	    }else if(item.getTitle().equals(this.getResources().getString(R.string.install_menuitem))){
 	    	File skin = new File(skinarray.get(info.position).path);
 	    	File skinsf = new File(APKManipulation.ptdir, "/Skins/");
 	    	File dest = new File(skinsf, skinarray.get(info.position).name);

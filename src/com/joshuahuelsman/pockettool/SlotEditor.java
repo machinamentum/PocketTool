@@ -32,7 +32,7 @@ public class SlotEditor extends Activity {
 		count = (EditText)findViewById(R.id.countEdit);
 		damage = (EditText)findViewById(R.id.damageEdit);
 		
-		slotID.setText("slotid: " + mSlot.slotid);
+		slotID.setText(this.getResources().getString(R.string.item_slotid) + ": " + mSlot.slotid);
 		itemid.setText("" + mSlot.itemid);
 		count.setText("" + mSlot.count);
 		damage.setText("" + mSlot.damage);

@@ -16,15 +16,12 @@ import android.os.Bundle;
 import android.widget.TextView;
 
 public class AboutSimpleNBT extends Activity {
-	public static final String abouttext =
-			"PocketTool uses the SimpleNBT (formally SpoutNBT) library developed by the SpoutDev team..\n" +
-			"SimpleNBT is licensed under the SpoutDev License Version 1.\n" +
-			"For the full licensing information for SimpleNBT please visit https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt";
+
 	@Override
 	public void onCreate(Bundle savedInstanceState){
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.manual);
 		TextView tv = (TextView)findViewById(R.id.manualText);
-		tv.setText(abouttext);
+		tv.setText(R.string.about_nbt_text);
 	}
 }
