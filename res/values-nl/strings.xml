@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hallo Wereld, PocketToolActiviteit!</string>
+    <string name="app_name">PocketTool</string>
+    <string-array name="menu">
+        <item >Use Skin</item>
+    </string-array>
+        <string name="disclaimer">Waarschuwing: Pockettool is niet aangesloten aan de gelinkte websites hierin. dit zijn door de gemeenschap bijgedragen links.</string>
+        <string name="links">Texture Packs:\n</string>
+    <string name="enter_minecraft_username">Vul je minecraft.net gebruikersnaam in, en klik download.</string>
+    <string name="download">Download</string>
+    <string name="enter_ip">Vul het IP hier in</string>
+    <string name="patch_ip">Patch Mijn IP!</string>
+    <string name="toolkit">Gereedschapskist</string>
+    <string name="leveleditor">Level veranderaar</string>
+    <string name="links_button_caption">Links</string>
+    <string name="install_downloaded_content">Installeer de gedownloade bestanden</string>
+    <string name="patch">Patch</string>
+    <string name="change_textures_skin">Verander Textures/Skin</string>
+    <string name="patch_mod">Patch Mod</string>
+    <string name="change_server_ip">Verander server IP</string>
+    <string name="download_minecraft_skin">Download minecraft.net skin</string>
+    <string name="done_patching">Klaar met patching</string>
+    <string name="apply_changes">Wijzigingen toepassen</string>
+    <string name="manual">Gebruiksaanwijzing</string>
+    <string name="settings">Instellingen</string>
+    <string name="please_wait">Even wachten aub...</string>
+    <string name="refreshing_resources">Middelen Herladen...</string>
+    <string name="about_nbt">Over</string>
+    <string name="actions_prompt">Wat wil je doen?</string>
+    <string name="patch_of_course">Patchen, Natuurlijk!</string>
+    <string name="undo">Ongedaan maken</string>
+    <string name="use_skin">Gebruik Skin</string>
+    <string name="uninstall_skin">Verwijder Skin</string>
+    <string name="use_texture">Gebruik Texture</string>
+    <string name="using_texture">In Gebruik </string>
+    <string name="magic_ok">Magie Gelukt!</string>
+    <string name="magic_error">Magie Fout!</string>
+    <string name="disable_uninstall_checkbox_text">Uitschakelen Verwijdering van Minecraft PE</string>
+    <string name="disabling_uninstall">Uitschakelen Verwijdering</string>
+    <string name="enabling_uninstall">Inschakelen Verwijdering</string>
+    <string name="install_menuitem">Installeren</string>
+    <string name="use_menuitem">Gebruiken</string>
+    <string name="skins">Skins</string>
+    <string name="textures">Textures</string>
+    <string name="installed">Geinstalleerd</string>
+    <string name="edit_inventory">Verander Inventaris</string>
+    <string name="item_damage">Schade</string>
+    <string name="item_count">Aantal</string>
+    <string name="item_slotid">Slot ID</string>
+    <string name="item_id">ID</string>
+    <string name="about_nbt_text">PocketTool gebruikt de SimpleNBT (vroeger SpoutNBT) library Ontwikkeld door het SpoutDev team.\nSimpleNBT is erkend onder de SpoutDev Licentie versie 1.\nVoor de volledige licentie informatie van SimpleNBT Bezoek https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
+    <!-- The manual is too long, so I split it uup into several lines. -->
+    <string name="manual_text_part_1">Hallo, bedankt voor het gebruik van Pockettool!\nOm te beginnen, download je favoriete Minecraft PE skin/texture pack door gebruik te maken van uw apparaat zijn internet browser of die van een computer. Als je de computer gebruikt, kopieer dan je skin/texture pack naar de \"download\" map op jouw sd kaart.\n\n</string>
+    <string name="manual_text_part_2">Je moet Minecraft PE of Minecraft PE Demo geinstalleerd hebben voor pockettool om normaal te werken.\nStart PocketTool.\nInstalleer Gedownloade Skins/Texture Packs:\nKlik \"Installeer de Gedownloade bestanden\"\nJe kan een skin installeren door lang op de skin te drukken die je wilt installeren en klik\"Installeer\"\nJe kan een texture pack installeren door lang op de texture pack naam te drukken die je wilt installeren en klik \"Installeren\"\nGa terug naar het hoofd scherm(druk op de Terug knop)\n\n</string>
+    <string name="manual_text_part_3">Gebruik geinstalleerde Skins/Texture Packs:\nKlik \"Verander Textures/Skins\"\nJe kan een skin installeren door lang op de skin te drukken die je wilt installeren en klik \"Gebruiken\"\nJe kan een texture pack installeren door lang op de texture pack naam te drukken die je wilt installeren en klik \"Gebruiken\"\n\n</string>
+    <string name="manual_text_part_4">Installeren:\nDruk op jouw apparaat zijn\'s \"Menu\" knop en klik \"Wijzigingen toepassen\"\nBevestig de verwijdering. Bevestig de installatie.\nStart Minecraft PE (or Demo) en geniet van je nieuwe skin en texture pack!</string>
+
+
+</resources>
