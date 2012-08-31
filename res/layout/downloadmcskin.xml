@@ -17,7 +17,9 @@
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:ems="10" >
+        android:ems="10"
+        android:inputType="text|textEmailAddress">
+        <!-- inputType anti-auto caps from http://stackoverflow.com/questions/6976950/how-to-disable-auto-capitalization-of-an-edittext -->
 
         <requestFocus />
     </EditText>

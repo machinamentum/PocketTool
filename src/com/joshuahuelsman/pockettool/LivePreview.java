@@ -185,7 +185,7 @@ public class LivePreview extends SGEActivity {
 				e.printStackTrace();
 			}
 			Toast.makeText(getApplicationContext(),
-					this.getResources().getString(R.string.using_texture) + textures.get(info.position).name,
+					this.getResources().getString(R.string.using_texture) + " " + textures.get(info.position).name,
 					Toast.LENGTH_SHORT).show();
 			return true;
 	    }else{
