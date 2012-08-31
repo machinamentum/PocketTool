@@ -40,26 +40,39 @@ public class DownloadMinecraftNetSkin extends Activity implements OnClickListene
 
 	public void onClick(View v) {
 		if(v.getId() == R.id.downloadmcnetskin){
-			try {
-				URL murl = new URL("http://www.minecraft.net/skin/"
-						+ editText.getText() + ".png");
-				File out = new File(APKManipulation.ptdir, "Skins/" 
-						+ editText.getText() + ".png");
+			new Thread(new Runnable() {
+				public void run() {
+					try {
+						URL murl = new URL("http://www.minecraft.net/skin/"
+								+ editText.getText() + ".png");
+						File out = new File(APKManipulation.ptdir, "Skins/" 
+								+ editText.getText() + ".png");
 				
-				InputStream in = murl.openStream();
-				OutputStream os = new FileOutputStream(out);
+						InputStream in = murl.openStream();
+						OutputStream os = new FileOutputStream(out);
 				
-				ZipUtils.copy(in, os);
-				in.close();
-				os.close();
-				Toast.makeText(this, "Downloaded " + editText.getText() + ".png", Toast.LENGTH_SHORT).show();
-			} catch (MalformedURLException e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			} catch (IOException e) {
-				Toast.makeText(this, "Could not download skin!", Toast.LENGTH_SHORT).show();
-				e.printStackTrace();
-			}
+						ZipUtils.copy(in, os);
+						in.close();
+						os.close();
+						DownloadMinecraftNetSkin.this.runOnUiThread(new Runnable() {
+							public void run() {
+								Toast.makeText(DownloadMinecraftNetSkin.this, DownloadMinecraftNetSkin.this.getResources().getString(R.string.skin_downloaded) + 
+									" " + editText.getText() + ".png", Toast.LENGTH_SHORT).show();
+							}
+						});
+					} catch (MalformedURLException e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
+					} catch (IOException e) {
+						DownloadMinecraftNetSkin.this.runOnUiThread(new Runnable() {
+							public void run() {
+								Toast.makeText(DownloadMinecraftNetSkin.this, R.string.skin_download_error, Toast.LENGTH_SHORT).show();
+							}
+						});
+						e.printStackTrace();
+					}
+				}
+			}).start();
 			
 		}
 		
