@@ -21,6 +21,8 @@
     <string name="patch_mod">Patch Mod</string>
     <string name="change_server_ip">Change server IP</string>
     <string name="download_minecraft_skin">Download minecraft.net skin</string>
+    <string name="skin_downloaded">Downloaded</string>
+    <string name="skin_download_error">Could not download skin!</string>
     <string name="done_patching">Done patching</string>
     <string name="apply_changes">Apply Changes</string>
     <string name="manual">Manual</string>
@@ -34,7 +36,7 @@
     <string name="use_skin">Use Skin</string>
     <string name="uninstall_skin">Uninstall Skin</string>
     <string name="use_texture">Use Texture</string>
-    <string name="using_texture">Using </string>
+    <string name="using_texture">Using</string>
     <string name="magic_ok">Magic Okay!</string>
     <string name="magic_error">Magic Error!</string>
     <string name="disable_uninstall_checkbox_text">Disable Uninstall of Minecraft PE</string>

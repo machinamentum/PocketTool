@@ -132,6 +132,7 @@ public class ZipUtils {
 			File file = files[i];
 			if(file.isDirectory()){
 				zip(orig, file, zipFolder);
+				continue;
 			}
 			String name = file.getAbsolutePath().substring(orig.getAbsolutePath().toString().length() +1);
 			if(name.equals("") != true){
