@@ -67,7 +67,8 @@ public class TexturesSkinsActivity extends TabActivity {
 	    //MenuInflater inflater = getMenuInflater();
 	    menu.add(R.string.apply_changes);
 	    menu.add(R.string.manual);
-	    menu.add(R.string.settings);
+	    MenuItem settings = menu.add(R.string.settings);
+	    settings.setIcon(R.drawable.cog);
 	    return true;
 	}
 	
