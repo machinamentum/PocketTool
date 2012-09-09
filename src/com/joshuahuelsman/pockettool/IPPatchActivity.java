@@ -11,10 +11,15 @@
 package com.joshuahuelsman.pockettool;
 
 import java.io.File;
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.OutputStream;
+import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
+import java.util.Arrays;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -79,6 +84,41 @@ public class IPPatchActivity extends Activity implements OnClickListener {
 			out.write(buf.array());
 			out.close();
 		}
+	}
+	
+	//Supposedly finds the default IP in libminecraftpe.so and 
+	//patches the new IP at that address
+	
+	public static void dynamicIPPatch(String ip) throws IOException {
+		File f = new File(APKManipulation.ptdir, "/temp/lib/armeabi-v7a/libminecraftpe.so");
+		byte[] barray = new byte[(int) f.length()];
+		InputStream is = new FileInputStream(f);
+		is.read(barray);
+		is.close();
+		ByteBuffer buf = ByteBuffer.wrap(barray);
+		int index = bruteIndexOf(buf.array(), "255.255.255.255".getBytes("ASCII-US"));
+		buf.position(index);
+		buf.put(ip.getBytes("ASCII-US"), 0, ip.length());
+		f.delete();
+		OutputStream os = new FileOutputStream(f);
+		os.write(buf.array());
+		os.close();
+	}
+	
+	public static int bruteIndexOf(byte[] haystack, byte[] needle) {
+		haystackCheck: for(int i = 0; i < haystack.length; i++) {
+			if(haystack[i] == needle[0]) {
+				needleCheck: for(int i2 = 1; i2 < needle.length; i2++) {
+					if(haystack[i + i2] == needle[i2]) {
+						continue needleCheck;
+					}else{
+						continue haystackCheck;
+					}
+				}
+				return i;
+			}
+		}
+		return -1;
 	}
 	
 	@Override
