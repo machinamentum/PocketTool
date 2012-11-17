@@ -12,14 +12,11 @@ package com.joshuahuelsman.pockettool;
 
 import java.io.File;
 import java.io.FileInputStream;
-import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
-import java.io.UnsupportedEncodingException;
 import java.nio.ByteBuffer;
-import java.util.Arrays;
 
 import android.app.Activity;
 import android.content.Intent;
@@ -34,8 +31,8 @@ import android.widget.Toast;
 
 public class IPPatchActivity extends Activity implements OnClickListener {
 	public static byte[] defaultip = {
-		(byte) 0xFF, 0x50, 0x54, 0x50, (byte) 0x00, 0x01, 0x00,
-		0x00, 0x00, 0x0A, 0x00, 0x19,  (byte) 0xF1, (byte)0x20, 
+		(byte) 0xFF, 0x50, 0x54, 0x50, 0x00, 0x01, 0x00,
+		0x00, 0x00, 0x0A, 0x00, 0x1B,  0x27, (byte)0xA8, 
 		0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 		0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00
 	};
@@ -53,7 +50,7 @@ public class IPPatchActivity extends Activity implements OnClickListener {
 		patchesdir = new File(APKManipulation.ptdir, "Patches/");
 		patchesdir.mkdirs();
 		
-	}
+	} 
 
 	public void onClick(View v) {
 		if(v.getId() == R.id.ippatcherbutton){

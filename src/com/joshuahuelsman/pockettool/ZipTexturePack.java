@@ -25,9 +25,11 @@ public class ZipTexturePack {
 	static File assets;
 	static File font;
 	static File gui;
+	static File badge;
 	static File item;
 	static File mob;
 	static File lang;
+	static File art;
 	
 	
 	static File res;
@@ -44,11 +46,11 @@ public class ZipTexturePack {
 		
 		font = new File(assets, "font/");
 		gui = new File(assets, "gui/");
+		badge = new File(gui, "badge/");
 		item = new File(assets, "item/");
 		mob = new File(assets, "mob/");
 		lang = new File(assets, "lang/");
-		//controls = new File(gui, "controls/");
-		//selectworld = new File(gui, "selectworld/");
+		art = new File(assets, "art/");
 		
 		drawable = new File(res, "drawable/");
 		drawable_hdpi = new File(res, "drawable-hdpi/");
@@ -59,11 +61,11 @@ public class ZipTexturePack {
 		assets.mkdirs();
 		font.mkdirs();
 		gui.mkdirs();
+		badge.mkdirs();
 		item.mkdirs();
 		mob.mkdirs();
 		lang.mkdirs();
-		//controls.mkdirs();
-		//selectworld.mkdirs();
+		art.mkdirs();
 		
 		res.mkdirs();
 		drawable.mkdirs();
@@ -99,7 +101,11 @@ public class ZipTexturePack {
 			outputFile = new File(assets, "terrain.png");
 		}else if(entry.getName().contains("particles.png")){
 			outputFile = new File(assets, "particles.png");
-		}else if(entry.getName().contains("default.png")){
+		}else if(entry.getName().contains("terrain (2).png")){
+			outputFile = new File(assets, "terrain (2).png");
+		}
+		
+		else if(entry.getName().contains("default.png")){
 			outputFile = new File(font, "default.png");
 		}else if(entry.getName().contains("default8.png")){
 			outputFile = new File(font, "default8.png");
@@ -137,11 +143,25 @@ public class ZipTexturePack {
 			outputFile = new File(gui, "spritesheet.png");
 		}
 		
+		else if(entry.getName().contains("minecon140.png")){
+			outputFile = new File(badge, "minecon140.png");
+		}
+		
 		else if(entry.getName().contains("camera.png")){
 			outputFile = new File(item, "camera.png");
 		}else if(entry.getName().contains("arrows.png")){
 			outputFile = new File(item, "arrows.png");
-		}else if(entry.getName().contains("char.png")){
+		}else if(entry.getName().contains("chest.png")){
+			outputFile = new File(item, "chest.png");
+		}else if(entry.getName().contains("sign.png")){
+			outputFile = new File(item, "sign.png");
+		}
+		
+		else if(entry.getName().contains("kz.png")){
+			outputFile = new File(art, "kz.png");
+		}
+		
+		else if(entry.getName().contains("char.png")){
 			outputFile = new File(mob, "char.png");
 		}else if(entry.getName().contains("chicken.png")){
 			outputFile = new File(mob, "chicken.png");
@@ -151,6 +171,8 @@ public class ZipTexturePack {
 			outputFile = new File(mob, "creeper.png");
 		}else if(entry.getName().contains("pig.png")){
 			outputFile = new File(mob, "pig.png");
+		}else if(entry.getName().contains("pigzombie.png")){
+			outputFile = new File(mob, "pigzombie.png");
 		}else if(entry.getName().contains("sheep.png")){
 			outputFile = new File(mob, "sheep.png");
 		}else if(entry.getName().contains("sheep_fur.png")){
@@ -161,7 +183,9 @@ public class ZipTexturePack {
 			outputFile = new File(mob, "spider.png");
 		}else if(entry.getName().contains("zombie.png")){
 			outputFile = new File(mob, "zombie.png");
-		}else if(entry.getName().contains("drawable/bg32.png")){
+		}
+		
+		else if(entry.getName().contains("drawable/bg32.png")){
 			outputFile = new File(drawable, "bg32.png");
 		}else if(entry.getName().contains("drawable/iconx.png")){
 			outputFile = new File(drawable, "iconx.png");
