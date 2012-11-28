@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Привет мир, PocketTool Активен!</string>
+    <string name="app_name">PocketTool</string>
+    <string name="disclaimer">"Дисклеймер: PocketTool никоим образом не связан с этим сайтом.
+Это лишь ссылка на сообщество."</string>
+    <string name="links">"Текстурпаки:
+"</string>
+    <string name="enter_minecraft_username">"Пожалуйста введите логин того, чей скин желаете скачать, на minecraft.net,
+Затем нажмите \"Загрузить\"."</string>
+    <string name="download">Загрузить</string>
+    <string name="enter_ip">Введите сюда IP</string>
+    <string name="patch_ip">Создать патч!</string>
+    <string name="toolkit">Мастерская</string>
+    <string name="leveleditor">Редактор уровней</string>
+    <string name="links_button_caption">Ссылки</string>
+    <string name="install_downloaded_content">Установка контента</string>
+    <string name="patch">Патчить!</string>
+    <string name="change_textures_skin">Изменить скин/текстурпак</string>
+    <string name="patch_mod">Патчи</string>
+    <string name="change_server_ip">Создать патч с IP</string>
+    <string name="download_minecraft_skin">Скачать скин с minecraft.net</string>
+    <string name="skin_downloaded">Загружен</string>
+    <string name="skin_download_error">Не удалось найти скин!</string>
+    <string name="done_patching">Патч создан</string>
+    <string name="apply_changes">Применить выбранные патчи</string>
+    <string name="manual">Как пользоваться?</string>
+    <string name="settings">Настройки</string>
+    <string name="please_wait">Пожалуйста подождите...</string>
+    <string name="refreshing_resources">Обновление ресурсов...</string>
+    <string name="about_nbt">О программе</string>
+    <string name="actions_prompt">Что бы вы хотели сделать?</string>
+    <string name="patch_of_course">Выбрать патч!</string>
+    <string name="undo">Отменить выбор</string>
+    <string name="use_skin">Использовать этот скин</string>
+    <string name="uninstall_skin">Удалить скин</string>
+    <string name="use_texture">Использовать эти текстуры</string>
+    <string name="using_texture">Используется</string>
+    <string name="magic_ok">Магия ОК!</string>
+    <string name="magic_error">Магическая ошибка!</string>
+    <string name="disable_uninstall_checkbox_text">Деактивировать удаление MPE</string>
+    <string name="disabling_uninstall">Деактивировано</string>
+    <string name="enabling_uninstall">Активировано</string>
+    <string name="install_menuitem">Установить</string>
+    <string name="use_menuitem">Использовать</string>
+    <string name="skins">Скины</string>
+    <string name="textures">Текстуры</string>
+    <string name="installed">Установлено</string>
+    <string name="edit_inventory">Редактировать инвентарь</string>
+    <string name="item_damage">Урон</string>
+    <string name="item_count">Количество</string>
+    <string name="item_slotid">Слот</string>
+    <string name="item_id">ID</string>
+    <string name="about_nbt_text">"PocketTool использует SimpleNBT (формально SpoutNBT) библиотеки, разработанной командой the SpoutDev.
+SimpleNBT лицензирована the SpoutDev License Version 1.
+Для получения полной информации о лицензии SimpleNBT посетите https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt"</string>
+    <string name="manual_text_part_1">"Здравствуйте, Благодарим вас за использование PocketTool!
+Чтобы начать, пожалуйста, загрузите ваш любимый скин или текстуры Minecraft PE с помощью Интернет-браузера вашего устройства или компьютера. Если вы используете компьютер, перенесите загруженные вами файлы в папку \"download\" на вашей карте SD.
+
+"</string>
+    <string name="manual_text_part_2">"У вас должны быть установлены Minecraft PE или Minecraft PE демо для правильной работы PocketTool.
+Запустите PocketTool.
+Для установки загруженных скинов/текстурпаков:
+Нажмите \"Установить загруженный контент\"
+Вы можете установить скин длиным нажатием на название скина, который вы хотите установить, затем нажмите \"Установить\"
+Вы можете установить текстурпак длиным нажатием на его название, а потом нажатием кнопки \"Установить\"
+Вернуться на главный экран (нажмите кнопку назад)
+
+"</string>
+    <string name="manual_text_part_3">"Использовать установленные скины/текстурпаки:
+Нажмите \"Изменить текстуры/скин\"
+Вы можете установить скин длиным нажатием на название скина, который вы хотите установить, затем нажмите \"Использовать\"
+Вы можете установить текстурпак длиным нажатием на его название, а потом нажатием кнопки \"Использовать\"
+
+"</string>
+    <string name="manual_text_part_4">"Установка:
+Нажмите кнопку \"Меню\", а затем \"Применить все патчи\"
+Подтвердите удаление. Подтвердите установку.
+Запустите Minecraft PE (или демо) и наслаждайтесь вашим новым скином/текстурпаком!"</string>
+</resources>
