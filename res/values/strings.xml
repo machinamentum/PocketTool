@@ -52,8 +52,10 @@
     <string name="item_count">Count</string>
     <string name="item_slotid">Slot ID</string>
     <string name="item_id">ID</string>
+    <string name="install_direct_patch">Install direct patch</string>
+    <string name="direct_patch_warning">Direct Patch allows modders to overwrite any file in the APK. Only install patches from known sources.</string>
     <string name="about_nbt_text">PocketTool uses the SimpleNBT (formally SpoutNBT) library developed by the SpoutDev team.\nSimpleNBT is licensed under the SpoutDev License Version 1.\nFor the full licensing information for SimpleNBT please visit https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
-    <!-- The manual is too long, so I split it uup into several lines. -->
+    <!-- The manual is too long, so I split it up into several lines. -->
     <string name="manual_text_part_1">Hello, thank you for using PocketTool!\nTo begin, please download your favorite Minecraft PE skin/texture pack using your device\'s internet browser or using a computer. If you use a computer, please transfer your skin/texture pack to the \"download\" folder of your sdcard.\n\n</string>
     <string name="manual_text_part_2">You must have Minecraft PE or Minecraft PE Demo installed in order for PocketTool to run correctly.\nLaunch PocketTool.\nInstall Downloaded Skins/Texture Packs:\nClick \"Install Downloaded Content\"\nYou may install a skin by long pressing the skin you wish to install and click \"Install\"\nYou may install a texture pack by long pressing the texture pack name you wish to install and click \"Install\"\nReturn to the MainScreen (hit Back button)\n\n</string>
     <string name="manual_text_part_3">Use Installed Skins/Texture Packs:\nClick \"Change Textures/Skins\"\nYou may install a skin by long pressing the skin you wish to install and click \"Use\"\nYou may install a texture pack by long pressing the texture pack name you wish to install and click \"Use\"\n\n</string>
