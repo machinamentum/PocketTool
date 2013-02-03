@@ -30,6 +30,8 @@ public class ZipTexturePack {
 	static File mob;
 	static File lang;
 	static File art;
+	static File environment;
+	static File armor;
 	
 	
 	static File res;
@@ -51,6 +53,8 @@ public class ZipTexturePack {
 		mob = new File(assets, "mob/");
 		lang = new File(assets, "lang/");
 		art = new File(assets, "art/");
+		environment = new File(assets, "environment/");
+		armor = new File(assets, "armor/");
 		
 		drawable = new File(res, "drawable/");
 		drawable_hdpi = new File(res, "drawable-hdpi/");
@@ -66,6 +70,8 @@ public class ZipTexturePack {
 		mob.mkdirs();
 		lang.mkdirs();
 		art.mkdirs();
+		environment.mkdirs();
+		armor.mkdirs();
 		
 		res.mkdirs();
 		drawable.mkdirs();
@@ -184,6 +190,32 @@ public class ZipTexturePack {
 		}else if(entry.getName().contains("zombie.png")){
 			outputFile = new File(mob, "zombie.png");
 		}
+
+		else if (entry.getName().contains("chain_1.png")) {
+			outputFile = new File(armor, "chain_1.png");
+		} else if (entry.getName().contains("chain_2.png")) {
+			outputFile = new File(armor, "chain_2.png");
+		} else if (entry.getName().contains("cloth_1.png")) {
+			outputFile = new File(armor, "cloth_1.png");
+		} else if (entry.getName().contains("cloth_2.png")) {
+			outputFile = new File(armor, "cloth_2.png");
+		} else if (entry.getName().contains("diamond_1.png")) {
+			outputFile = new File(armor, "diamond_1.png");
+		} else if (entry.getName().contains("diamond_2.png")) {
+			outputFile = new File(armor, "diamond_2.png");
+		} else if (entry.getName().contains("gold_1.png")) {
+			outputFile = new File(armor, "gold_1.png");
+		} else if (entry.getName().contains("gold_2.png")) {
+			outputFile = new File(armor, "gold_2.png");
+		} else if (entry.getName().contains("iron_1.png")) {
+			outputFile = new File(armor, "iron_1.png");
+		} else if (entry.getName().contains("iron_2.png")) {
+			outputFile = new File(armor, "iron_2.png");
+		}
+
+		else if (entry.getName().contains("clouds.png")) {
+			outputFile = new File(environment, "clouds.png");
+		} 
 		
 		else if(entry.getName().contains("drawable/bg32.png")){
 			outputFile = new File(drawable, "bg32.png");
