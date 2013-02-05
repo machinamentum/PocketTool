@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">你好，世界，PocketTool已激活！</string>
+    <string name="app_name">PocketTool</string>
+    <string-array name="menu">
+        <item>使用皮肤</item>
+    </string-array>
+        <string name="disclaimer">免责声明:Pockettool与承载链接的网站没有任何从属关系，仅仅提供了下载链接</string>
+        <string name="links">材质包:</string>
+    <string name="enter_minecraft_username">请输入minecraft.net的用户名，然后点击下载</string>
+    <string name="download">下载</string>
+    <string name="enter_ip">在此输入IP</string>
+    <string name="patch_ip">更改我的IP！</string>
+    <string name="toolkit">工具箱</string>
+    <string name="leveleditor">关卡编辑器</string>
+    <string name="links_button_caption">链接</string>
+    <string name="install_downloaded_content">安装下载内容</string>
+    <string name="patch">打补丁</string>
+    <string name="change_textures_skin">更改材质/皮肤</string>
+    <string name="patch_mod">使用MOD</string>
+    <string name="change_server_ip">更改服务器IP</string>
+    <string name="download_minecraft_skin">下载minecraft.net上的皮肤</string>
+    <string name="skin_downloaded">已下载</string>
+    <string name="skin_download_error">不能下载皮肤！</string>
+    <string name="done_patching">完成补丁</string>
+    <string name="apply_changes">应用更改</string>
+    <string name="manual">手册</string>
+    <string name="settings">设置</string>
+    <string name="please_wait">请等待...</string>
+    <string name="refreshing_resources">刷新资源...</string>
+    <string name="about_nbt">关于</string>
+    <string name="actions_prompt">你希望做什么？</string>
+    <string name="patch_of_course">打补丁？当然！</string>
+    <string name="undo">卸载</string>
+    <string name="use_skin">使用皮肤</string>
+    <string name="uninstall_skin">卸载皮肤</string>
+    <string name="use_texture">使用材质</string>
+    <string name="using_texture">使用中</string>
+    <string name="magic_ok">魔术数字正确!</string>
+    <string name="magic_error">魔术数字出错!</string>
+    <string name="disable_uninstall_checkbox_text">禁用Minecraft PE卸载</string>
+    <string name="disabling_uninstall">停用卸载</string>
+    <string name="enabling_uninstall">启用卸载</string>
+    <string name="install_menuitem">安装</string>
+    <string name="use_menuitem">使用</string>
+    <string name="skins">皮肤</string>
+    <string name="textures">材质</string>
+    <string name="installed">已安装</string>
+    <string name="edit_inventory">编辑清单</string>
+    <string name="item_damage">损伤</string>
+    <string name="item_count">计数</string>
+    <string name="item_slotid">ID框</string>
+    <string name="item_id">ID</string>
+    <string name="about_nbt_text">PocketTool uses the SimpleNBT (formally SpoutNBT) library developed by the SpoutDev team.\nSimpleNBT is licensed under the SpoutDev License Version 1.\nFor the full licensing information for SimpleNBT please visit https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
+    <!-- The manual is too long, so I split it up into several lines. -->
+    <string name="manual_text_part_1">你好，谢谢你使用PocketTool!\n首先，请在你设备上的浏览器或使用中的电脑上下载你喜欢的Minecraft PE的皮肤/材质.如果你使用电脑，请把你的皮肤/材质包放在你SD卡的“download”文件夹里</string>
+    <string name="manual_text_part_2">你必须安装了Minecraft PE或者Minecraft PE Demo才能使PocketTool正常运行\n安装已下载的皮肤/材质包:\n点击“安装下载内容”\n你便可以通过长按皮肤/材质包来安装你想要的皮肤/材质包，然后点击“安装”\n最后返回主屏幕（猛击返回按钮）</string>
+    <string name="manual_text_part_3">使用安装的皮肤/材质包:\n点击“更改材质/皮肤”\n你可以通过长按一个皮肤来安装你希望安装的皮肤，然后点击“使用”\n你可以通过长按一个材质包名字来安装你希望安装的材质包，然后点击“使用”</string>
+    <string name="manual_text_part_4">安装:\n按你设备上的“菜单”按钮/按键，然后点击“应用更改”\n确认删除.确认安装\n开始你的Minecraft PE （或者Demo）并享受你的新皮肤和材质包吧！</string>
+
+
+</resources>
