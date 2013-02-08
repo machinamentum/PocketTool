@@ -19,7 +19,6 @@ import android.util.Log;
 
 public class RefreshThread extends Thread {
 	public static int CREATED_DEFAULTS = 0;
-	private APKManipulation apkm;
 	private Activity act;
 	public RefreshThread(Activity a){
 		act = a;

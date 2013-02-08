@@ -146,7 +146,6 @@ public class PatchActivity extends ListActivity  {
 			}
 			
 			if(!undo.exists()){
-				File orig = new File(APKManipulation.ptdir, "/Textures/originals/lib/armeabi-v7a/libminecraftpe.so");
 				try {
 					PTPatch.diff(f.getAbsolutePath(), old.getAbsolutePath(), undo);
 					old.delete();

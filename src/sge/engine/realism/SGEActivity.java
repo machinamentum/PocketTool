@@ -24,7 +24,6 @@ import sge.engine.shapes.Cube;
 import sge.engine.shapes.Triangle;
 import android.app.Activity;
 import android.os.Bundle;
-import android.widget.LinearLayout;
 
 public class SGEActivity extends Activity {
     /** Called when the activity is first created. */
