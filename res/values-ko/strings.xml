@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="hello">Hello World, PocketToolActivity!</string>
+    <string name="app_name">PocketTool</string>
+    <string name="disclaimer">Disclaimer: PocketTool is in no way affiliated with the linked websites herein. These are community contributed links.</string>
+    <string name="links">\"�ؽ�����:
+\"</string>
+    <string name="enter_minecraft_username">minecraft.net�� �г����� �Է����ּ���,�׸��� �ٿ�ε带 ���� �ּ���.</string>
+    <string name="download">�ٿ�ε�</string>
+    <string name="enter_ip">���⿡ IP�� �Է��ϼ���.</string>
+    <string name="patch_ip">�� IP ��ġ�ϱ�!</string>
+    <string name="toolkit">�۾� ����</string>
+    <string name="leveleditor">Level ���� ����</string>
+    <string name="links_button_caption">��ũ</string>
+    <string name="install_downloaded_content">������ �ٿ�ε�</string>
+    <string name="patch">��ġ</string>
+    <string name="change_textures_skin">��Ų/�ؽ����� ����</string>
+    <string name="patch_mod">�����ġ</string>
+    <string name="change_server_ip">���� IP ����</string>
+    <string name="download_minecraft_skin">�ٿ�ε� minecraft.net ��Ų</string>
+    <string name="skin_downloaded">�ٿ�ε�</string>
+    <string name="skin_download_error">��Ų�� �ٿ�ε� �� �� ����ϴ�!</string>
+    <string name="done_patching">��ġ �Ϸ�</string>
+    <string name="apply_changes">���� ���� ���</string>
+    <string name="manual">�޴���</string>
+    <string name="settings">����</string>
+    <string name="please_wait">��ø� ��޷� �ּ���...</string>
+    <string name="refreshing_resources">���ҽ� ������...</string>
+    <string name="about_nbt">�� ������</string>
+    <string name="actions_prompt">������ �ϱ� ���Ͻó���?</string>
+    <string name="patch_of_course">����,��ġ!</string>
+    <string name="undo">���</string>
+    <string name="use_skin">��Ų����ϱ�</string>
+    <string name="uninstall_skin">��Ų ��������ϱ�</string>
+    <string name="use_texture">�ؽ��� ����ϱ�</string>
+    <string name="using_texture">����ϱ�</string>
+    <string name="magic_ok">���� �Ϸ�!</string>
+    <string name="magic_error">���� ����!</string>
+    <string name="disable_uninstall_checkbox_text">Minecraft PE ���ν��� ������� �ʱ�</string>
+    <string name="disabling_uninstall">���ν��� ������� �ʱ�</string>
+    <string name="enabling_uninstall">���ν��� ����ϱ�</string>
+    <string name="install_menuitem">��ġ</string>
+    <string name="use_menuitem">����ϱ�</string>
+    <string name="skins">��Ų</string>
+    <string name="textures">�ؽ�����</string>
+    <string name="installed">��ġ</string>
+    <string name="edit_inventory">�κ��丮 ����</string>
+    <string name="item_damage">������</string>
+    <string name="item_count">Ƚ��</string>
+    <string name="item_slotid">���� ���̵�</string>
+    <string name="item_id">���̵�</string>
+    <string name="about_nbt_text">"PocketTool uses the SimpleNBT (formally SpoutNBT) library developed by the SpoutDev team.
+SimpleNBT is licensed under the SpoutDev License Version 1.
+For the full licensing information for SimpleNBT please visit https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt"</string>
+    <string name="manual_text_part_1">"�ȳ��ϼ���,�������� �̿��� �ּż� �����մϴ�!
+�����ϱ� ����, ����� ���� �����ϴ� Minecraft PE ��Ų/�ؽ������� �ٿ�޾��ּ��� ����� �ڵ��� ������ �̿��ϰų� ��ǻ�͸� �̿��� �ּ���. ���� ��ǻ�͸� �̿��ϽŴٸ�, ����� �ؽ������̳� ��Ų�� sdcard�� �ִ� \"download\" �� �־� �ּ���.
+
+"</string>
+    <string name="manual_text_part_2">"�����  �������� ���������� �۵���Ű�� ���ؼ�Minecraft PE �� Minecraft PE Demo �� ��ġ�ؾ� �մϴ�.
+�������� �����Ű����.
+�ٿ�ε��� �ؽ�����/��Ų ��ġ:
+Ŭ�� \"�ٿ�ε��� ������ ��ġ\"
+����� ��Ų�� ��ġ�ϱ� ���Ѵٸ� ��Ų ������ �� ������ ��ġ�� ��������.\"��ġ\"
+����� ���� �ؽ������� ��ġ�ϱ⸦ ���Ѵٸ� �ؽ������� �̸��� �ڴ����� ��ġ��ư�� ��������. \"��ġ\"
+����ȭ������ ���ư��ô�. (�ڷΰ��� ��ư�� ��������)
+
+"</string>
+    <string name="manual_text_part_3">"��Ų/�ؽ����� �ٿ�ε带 ���:
+Ŭ�� \"��Ų/�ؽ����Ѻ���\"
+����� ��Ų�� �ٲٽð� �����ø� ��Ų�� �� �����ð� ���� ��ư�� �����ϴ�. \"����ϱ�\"
+����� �ؽ������� �ٲٽ÷��� �ؽ������̸��� �� ������ ������ư�� �����ݴϴ�. \"����ϱ�\"
+
+"</string>
+    <string name="manual_text_part_4">"��ġ:
+����� ��⿡�� \"�޴�\" ��ư�̳� Ű�� ���� �ݴϴ�. \"���� ���\"�� �����ϴ�.
+���ν����� Ȯ���ϰ� �ٽ� �ν����� Ȯ���մϴ�.
+Minecraft PE (or Demo)�� �����ŵ�ϴ�. ����� ���ο� ��Ų�� �ؽ������� ��⼼��!"
+[KOR]-ChaosLand</string>
+</resources>
