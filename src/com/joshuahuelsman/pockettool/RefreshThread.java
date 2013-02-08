@@ -22,7 +22,6 @@ public class RefreshThread extends Thread {
 	private Activity act;
 	public RefreshThread(Activity a){
 		act = a;
-		apkm = new APKManipulation(act);
 	}
 	
 	@Override
