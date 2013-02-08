@@ -12,16 +12,13 @@ package com.joshuahuelsman.pockettool;
 
 import java.io.IOException;
 
-import android.app.Activity;
 import android.os.Handler;
 import android.os.Message;
 import android.util.Log;
 
 public class RefreshThread extends Thread {
 	public static int CREATED_DEFAULTS = 0;
-	private Activity act;
-	public RefreshThread(Activity a){
-		act = a;
+	public RefreshThread(){
 	}
 	
 	@Override

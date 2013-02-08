@@ -50,7 +50,7 @@ public class ToolKit extends Activity implements OnClickListener {
 			e1.printStackTrace();
 		}
 		
-		RefreshThread rt = new RefreshThread(this);
+		RefreshThread rt = new RefreshThread();
 		
 		apkm = new APKManipulation(this);
 		
