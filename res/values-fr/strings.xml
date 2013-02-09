@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Salut tout le monde, utilisateurs de PocketTool!</string>
+    <string name="app_name">PocketTool</string>
+    <string-array name="menu">
+        <item >Utiliser un skin</item>
+    </string-array>
+        <string name="disclaimer">Avertissement: PocketTool n\'est en aucun cas affilié à ces sites. Ce sont des liens communautaires des contributeurs.</string>
+        <string name="links">Texture Packs:\n</string>
+    <string name="enter_minecraft_username">Merci d\'entrer votre pseudo Minecraft.net, ensuite cliquez sur télécharger.</string>
+    <string name="download">Télécharger</string>
+    <string name="enter_ip">Entrez l\'Ip ici</string>
+    <string name="patch_ip">Patcher mon Ip</string>
+    <string name="toolkit">Tool Kit</string>
+    <string name="leveleditor">Editeur de parties</string>
+    <string name="links_button_caption">Liens</string>
+    <string name="install_downloaded_content">Installer les contenus téléchargés</string>
+    <string name="patch">Patcher</string>
+    <string name="change_textures_skin">Changer les Textures/Skins</string>
+    <string name="patch_mod">Patcher le Mod</string>
+    <string name="change_server_ip">Changer l\'Ip du serveur</string>
+    <string name="download_minecraft_skin">Télécharger les skins minecraft.net</string>
+    <string name="skin_downloaded">Téléchargé</string>
+    <string name="skin_download_error">N\'a pas pu télécharger le skin !</string>
+    <string name="done_patching">Patchage fini</string>
+    <string name="apply_changes">Appliquer les changements</string>
+    <string name="manual">Manuel</string>
+    <string name="settings">Reglages</string>
+    <string name="please_wait">Veuillez patienter...</string>
+    <string name="refreshing_resources">Rafraichissement des Resources...</string>
+    <string name="about_nbt">A propos</string>
+    <string name="actions_prompt">Que voulez-vous faire ?</string>
+    <string name="patch_of_course">Patcher, evidemment!</string>
+    <string name="undo">Déinstaller</string>
+    <string name="use_skin">Utiliser le Skin</string>
+    <string name="uninstall_skin">Déinstaller le Skin</string>
+    <string name="use_texture">Utiliser les Textures</string>
+    <string name="using_texture">Using</string>
+    <string name="magic_ok">Ok Magique !</string>
+    <string name="magic_error">Erreur Magique!</string>
+    <string name="disable_uninstall_checkbox_text">Désactiver la désinstallation de Minecraft PE</string>
+    <string name="disabling_uninstall">Désinstallation acivée</string>
+    <string name="enabling_uninstall">Désinstallation désacivée</string>
+    <string name="install_menuitem">Installer</string>
+    <string name="use_menuitem">Utiliser</string>
+    <string name="skins">Skins</string>
+    <string name="textures">Textures</string>
+    <string name="installed">Installé</string>
+    <string name="edit_inventory">Editer l\'inventaire</string>
+    <string name="item_damage">Dommage</string>
+    <string name="item_count">Nombre</string>
+    <string name="item_slotid">Slot ID</string>
+    <string name="item_id">ID</string>
+    <string name="about_nbt_text">PocketTool utilise le SimpleNBT (formally SpoutNBT) bibliothèque developée par la SpoutDev team.\nSimpleNBT est autorisé sous la License Version SpoutDev 1.\nPour les informations de  la licence complète pour SimpleNBT s\'il vous plaît visitez https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
+    <!-- The manual is too long, so I split it uup into several lines. -->
+    <string name="manual_text_part_1">Salut, merci d\'utiliser PocketTool!\nPour commencer, s\'il vous plaît téléchargez votre Skin/texture Pack favori de Minecraft PE sur votre appareil à l\'aide navigateur Internet\'s ou en utilisant un ordinateur. Si vous utilisez un ordinateur, s\'il vous plaît transférer votre Skin/Pack de Texture au dossier \"download\" de votre carte SD.\n\n</string>
+    <string name="manual_text_part_2">Vous devez avoir Minecraft PE ou Minecraft PE Démo installé pour que PocketTool fonctionne correctement.\nLancez PocketTool. \nInstallez les Skins Téléchargé:\nClickez sur \"Installer les contenus téléchargés\"\nVous pouvez installer un skin en restant appuyer sur le skin que vous souhaitez installer et cliquez sur \"Installer\"\n Vous pouvez installer un pack de texture en restant appuyer sur le pack que vous souhaitez installer et cliquez sur \"Installer\"\nRetourner au menu principal(appuyez sur le bouton retour)\n\n</string>
+    <string name="manual_text_part_3">Utiliser des Skins/Texture Packs installés:\nClick \"Changer les Textures/Skin\"\nVous pouvez installer un skin en restant appuyer sur le skin que vous souhaitez installer et cliquez sur \"Utiliser\"\n Vous pouvez installer un pack de texture en restant appuyer sur le pack que vous souhaitez installer et cliquez sur \"Utiliser\"\n\n</string>
+    <string name="manual_text_part_4">Installer:\nPressez votre touche \"Menu\" de votre appareil puis cliquez \"Appliquer les changements\"\nConfirmez la désinstallation. Confirmez l\'installation.\nLancez Minecraft PE (ou la Demo) et savourez votre nouveau skin ou texture pack!\n Merci a g34pard pour la traduction !</string>
+
+
+</resources>
