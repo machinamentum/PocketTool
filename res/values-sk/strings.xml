@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Ahoj Svet, PocketToolAktivita!</string>
+    <string name="app_name">PocketTool</string>
+    <string-array name="menu">
+        <item >Použiť Skin</item>
+    </string-array>
+        <string name="disclaimer">Vyhlásenie: PocketTool nemá nič spoločné s odkazmi na stránky ktoré tu sú. Jedná sa Komunitu ktorá prispela odkazmy.</string>
+        <string name="links">Balík Textúr:\n</string>
+    <string name="enter_minecraft_username">Prosím vlož minecraft.net meno a Zvoľ Stiahnúť</string>
+    <string name="download">Stiahnúť</string>
+    <string name="enter_ip">Vlož IP Sem</string>
+    <string name="patch_ip">Aplikovať Moju IP!</string>
+    <string name="toolkit">Nástroje</string>
+    <string name="leveleditor">Editor Levelov</string>
+    <string name="links_button_caption">Odkazy</string>
+    <string name="install_downloaded_content">Inštalovanie Stiahnutých Súborov</string>
+    <string name="patch">Aplikovať</string>
+    <string name="change_textures_skin">Zmeniť Textúri/Skin</string>
+    <string name="patch_mod">Aplikovať Mód</string>
+    <string name="change_server_ip">Zmeniť IP servera</string>
+    <string name="download_minecraft_skin">Stiahnúť minecraft.net skin</string>
+    <string name="skin_downloaded">Stiahnuté</string>
+    <string name="skin_download_error">Nieje možné stiahnúť skin!</string>
+    <string name="done_patching">Aplikovanie Hotové</string>
+    <string name="apply_changes">Aplikovať zmeny</string>
+    <string name="manual">Manuál</string>
+    <string name="settings">Nastavenia</string>
+    <string name="please_wait">Prosím čakaj...</string>
+    <string name="refreshing_resources">Obnovujem Zdroje...</string>
+    <string name="about_nbt">O programe</string>
+    <string name="actions_prompt">Čo chceš spraviť?</string>
+    <string name="patch_of_course">Aplikovať, samozrejme!</string>
+    <string name="undo">Vrátiť</string>
+    <string name="use_skin">Použiť Skin</string>
+    <string name="uninstall_skin">Odinštalovať Skin</string>
+    <string name="use_texture">Použiť Textúri</string>
+    <string name="using_texture">Použitie</string>
+    <string name="magic_ok">Magické číslo OK!</string>
+    <string name="magic_error">Magicke číslo Chyba!</string>
+    <string name="disable_uninstall_checkbox_text">Vypnúť Odinštaláciu Minecraft PE</string>
+    <string name="disabling_uninstall">Vypínam Odinštaláciu</string>
+    <string name="enabling_uninstall">Zapínam Odinštaláciu</string>
+    <string name="install_menuitem">Inštalovať</string>
+    <string name="use_menuitem">Použiť</string>
+    <string name="skins">Skiny</string>
+    <string name="textures">Textúri</string>
+    <string name="installed">Nainštalované</string>
+    <string name="edit_inventory">Editovať Inventár</string>
+    <string name="item_damage">Poškodenie</string>
+    <string name="item_count">Počet</string>
+    <string name="item_slotid">Slot ID</string>
+    <string name="item_id">ID</string>
+    <string name="about_nbt_text">PocketTool používa SimpleNBT (formálne SpoutNBT) knižnice vyvinuté tímom SpoutDev.\nSimpleNBT je licencovaný pod SpoutDev licenciou Verzia 1.\nPre úplné informácie o licenciách pre SimpleNBT navštívte https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
+    <!-- The manual is too long, so I split it uup into several lines. -->
+    <string name="manual_text_part_1">Dobrý deň, Ďakujem Vám že používate PocketTool!\nAk chceš začať, prosím stiahni si svoj obľúbený Minecraft PE skin/Balík Textúr pomocou tvojho zariadenia použitím internetového prehliadača alebo použi počítač. Ak použiješ počítač, prosím presuň tvoj skin/Balík Textúr do zložky \"download\" na tvojej SD karte.\n\n</string>
+    <string name="manual_text_part_2">Musíš mať nainštalovaný Minecraft PE alebo Minecraft PE Demo pre správne fungovanie PocketTool.\nSpusti PocketTool.\nNainštaluj Stiahnuté Skiny/Baliky Textúr:\nZvoľ \"Inštalovať Stiahnutý Súbor\"\nMôžeš nainštalovať skin dlhým stlačením skinu, ktorí chceš nainštalovať, a potom klikni na tlačidlo \"Inštalovať\"\nMôžeš nainštalovať Balík Textúr dlhým stlačením Mena balíka, ktorí chceš nainštalovať a potom klikni na tlačidlo \"Inštalovať\"\nVráť sa na hlavnú obrazovku (Stlač tlačidlo späť)\n\n</string>
+    <string name="manual_text_part_3">Zvoľ nainštalované Skiny/Balíky Textúr:\nZvoľ \"Zmeniť Texturi/Skiny\"\nMôžeš nainštalovať skin dlhým stlačením skinu, ktorí chcete nainštalovať a potom kliknite na tlačidlo \"Použiť\"\nMôžeš nainštalovať Balík Textúr dlhým stlačením Mena balíka, ktorí chceš nainštalovať a potom klikni na tlačidlo \"Použiť\"\n\n</string>
+    <string name="manual_text_part_4">Inštalácia:\nStlač na tvojom zariadení tlačidlo \"Menu\" a potom zvoľ \"Aplikovať Zmeny\"\nPotvrď odinštaláciu. Potvrď inštaláciu.\nSpusti Minecraft PE (alebo Demo) a užívaj si tvoj nový skin alebo Balík Textúr!</string>
+
+
+</resources>
