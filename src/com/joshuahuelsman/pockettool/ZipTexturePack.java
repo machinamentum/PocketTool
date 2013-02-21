@@ -97,7 +97,7 @@ public class ZipTexturePack {
 		
 		
 		
-		if (entry.isDirectory()) {
+		if (entry.isDirectory() || entry.getName().contains("__MACOSX")) {
 			return;
 		}
 		
