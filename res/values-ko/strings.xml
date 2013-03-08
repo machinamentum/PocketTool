@@ -2,45 +2,47 @@
 <resources>
     <string name="hello">Hello World, PocketToolActivity!</string>
     <string name="app_name">PocketTool</string>
-    <string name="disclaimer">Disclaimer: PocketTool is in no way affiliated with the linked websites herein. These are community contributed links.</string>
-    <string name="links">"텍스쳐팩:
+    <string name="disclaimer">아래는 텍스쳐팩 및 스킨 다운로드에 도움을 드릴 수 있는 커뮤니티의 링크입니다. 참고하시기 바랍니다.</string>
+    <string name="links">"텍스쳐팩 :
 "</string>
-    <string name="enter_minecraft_username">minecraft.net의 닉네임을 입력해주세요,그리고 다운로드를 눌러 주세요.</string>
+    <string name="enter_minecraft_username">Minecraft.net의 닉네임을 입력하여 주신 후, 다운로드 버튼을 눌러주세요.</string>
     <string name="download">다운로드</string>
-    <string name="enter_ip">여기에 IP를 입력하세요.</string>
-    <string name="patch_ip">내 IP 패치하기!</string>
+    <string name="enter_ip">여기에 서버 IP를 입력하세요.</string>
+    <string name="patch_ip">IP 패치!</string>
     <string name="toolkit">작업 도구</string>
-    <string name="leveleditor">Level 파일 수정</string>
+    <string name="leveleditor">월드 정보 수정</string>
     <string name="links_button_caption">링크</string>
-    <string name="install_downloaded_content">콘텐츠 다운로드</string>
+    <string name="install_downloaded_content">다운로드한 컨텐츠 설치</string>
     <string name="patch">패치</string>
     <string name="change_textures_skin">스킨/텍스쳐팩 변경</string>
-    <string name="patch_mod">모드패치</string>
+    <string name="patch_mod">모드 패치</string>
     <string name="change_server_ip">서버 IP 변경</string>
-    <string name="download_minecraft_skin">다운로드 minecraft.net 스킨</string>
+    <string name="download_minecraft_skin">Minecraft.net 스킨 다운로드</string>
     <string name="skin_downloaded">다운로드</string>
     <string name="skin_download_error">스킨을 다운로드 할 수 없습니다!</string>
     <string name="done_patching">패치 완료</string>
     <string name="apply_changes">변경 내용 적용</string>
-    <string name="manual">메뉴얼</string>
+    <string name="manual">사용 설명</string>
     <string name="settings">설정</string>
-    <string name="please_wait">잠시만 기달려 주세요...</string>
-    <string name="refreshing_resources">리소스 수정중...</string>
+    <string name="please_wait">잠시만 기다려 주세요...</string>
+    <string name="refreshing_resources">리소스 새로 고치는 중...</string>
     <string name="about_nbt">이 어플은</string>
     <string name="actions_prompt">무엇을 하기 원하시나요?</string>
-    <string name="patch_of_course">물론,패치!</string>
+    <string name="patch_of_course">패치하기!</string>
     <string name="undo">취소</string>
-    <string name="use_skin">스킨사용하기</string>
-    <string name="uninstall_skin">스킨 적용해제하기</string>
+    <string name="use_skin">스킨 사용하기</string>
+    <string name="uninstall_skin">스킨 적용 해제하기</string>
     <string name="use_texture">텍스쳐 사용하기</string>
     <string name="using_texture">사용하기</string>
     <string name="magic_ok">마술 완료!</string>
-    <string name="magic_error">마술 에러!</string>
+    <string name="magic_error">마술 오류!</string>
     <string name="disable_uninstall_checkbox_text">Minecraft PE 언인스톨 사용하지 않기
 
-[KOR]-ChaosLand [AD TEAM]</string>
-    <string name="disabling_uninstall">언인스톨 사용하지 않기</string>
-    <string name="enabling_uninstall">언인스톨 사용하기</string>
+[KOR]-ChaosLand [AD TEAM]
+한국어 번역 수정 by 꽁치사마
+</string>
+    <string name="disabling_uninstall">MCPE 제거 사용하지 않음</string>
+    <string name="enabling_uninstall">MCPE 제거 사용</string>
     <string name="install_menuitem">설치</string>
     <string name="use_menuitem">사용하기</string>
     <string name="skins">스킨</string>
@@ -54,29 +56,36 @@
     <string name="about_nbt_text">"PocketTool uses the SimpleNBT (formally SpoutNBT) library developed by the SpoutDev team.
 SimpleNBT is licensed under the SpoutDev License Version 1.
 For the full licensing information for SimpleNBT please visit https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt"</string>
-    <string name="manual_text_part_1">"안녕하세요,포켈툴을 이용해 주셔서 감사합니다!
-시작하기 위해, 당신이 가장 좋아하는 Minecraft PE 스킨/텍스쳐팩을 다운받아주세요 당신의 핸드폰 브라우저를 이용하거나 컴퓨터를 이용해 주세요. 만약 컴퓨터를 이용하신다면, 당신의 텍스쳐팩이나 스킨을 sdcard에 있는 \"download\" 에 넣어 주세요.
+    <string name="manual_text_part_1">"MCPE의 강력한 도구, PocketTool을 사용해 주셔서 감사합니다!
+스킨과 텍스쳐팩을 사용하고 싶으시면, 사용할 스킨과 텍스쳐팩을 \"/sdcard/download\" 폴더에 다운로드 및 복사해 주시기 바랍니다.
+다른 경로에 다운로드 및 복사하시면, PocketTool은 인식을 못합니다.
 
 "</string>
-    <string name="manual_text_part_2">"당신은  포켓툴을 정상적으로 작동시키기 위해서Minecraft PE 나 Minecraft PE Demo 를 설치해야 합니다.
-포켓툴을 실행시키세요.
-다운로드한 텍스쳐팩/스킨 설치:
-클릭 \"다운로드한 콘텐츠 설치\"
-당신이 스킨을 설치하기 원한다면 스킨 파일을 꾹 눌러서 설치를 누르세요.\"설치\"
-당신이 만약 텍스쳐팩을 설치하기를 원한다면 텍스쳐팩의 이름을 꾹눌러서 설치버튼을 눌르세요. \"설치\"
-메인화면으로 돌아갑시다. (뒤로가기 버튼을 누르세요)
+    <string name="manual_text_part_2">"PocketTool을 정상적으로 사용하시려면 기기에 Minecraft PE (데모버전 포함)가 설치되어 있어야 합니다.
+스킨 및 텍스쳐팩을 사용하시려면, 먼저 PocketTool 어플을 실행하신 후,
+\"다운로드한 컨텐츠 설치\" 버튼을 누릅니다.
+원하는 스킨이 있으면, 그 스킨을 꾹 누르신 후 설치하시면 됩니다.
+텍스쳐팩은 텍스쳐팩 탭으로 진입한 후 마찬가지로 원하는 텍스쳐팩 파일을 꾹 누르신 후 설치하시면 됩니다.
+설치가 완료되었으면 메인 화면으로 돌아갑니다. (뒤로가기 버튼을 누르면 됩니다.)
 
 "</string>
-    <string name="manual_text_part_3">"스킨/텍스쳐팩 다운로드를 사용:
-클릭 \"스킨/텍스쳐팩변경\"
-당신이 스킨을 바꾸시고 싶으시면 스킨을 꾹 누르시고 다음 버튼을 누릅니다. \"사용하기\"
-당신이 텍스쳐팩을 바꾸시려면 텍스쳐팩이름을 꾹 누르고 다음버튼을 눌러줍니다. \"사용하기\"
+    <string name="manual_text_part_3">"스킨 및 텍스쳐팩 사용 : 
+\"스킨/텍스쳐팩 변경\" 버튼을 누릅니다.
+스킨을 사용하시려면 스킨 파일의 프리뷰를 꾹 누르신 후, \"사용하기\" 버튼을 누르시면 됩니다.
+텍스쳐팩도 마찬가지로 텍스쳐팩 이름을 꾹 누르신 후, \"사용하기\" 버튼을 누르시면 됩니다.
 
 "</string>
-    <string name="manual_text_part_4">"설치:
-당신의 기기에서 \"메뉴\" 버튼이나 키를 눌러 줍니다. \"변경 적용\"을 누릅니다.
-언인스톨을 확인하고 다시 인스톨을 확인합니다.
-Minecraft PE (or Demo)를 실행시킵니다. 당신의 새로운 스킨과 텍스쳐팩을 즐기세요!"
+    <string name="manual_text_part_4">"변경 사항 저장 및 설치 :
+기기의 \"메뉴\" 버튼을 누르시고, \"변경 내용 적용\"을 누릅니다.
+설정값에 따라 다르지만, MCPE 제거를 사용하실 때 처음에는 MCPE 제거 화면이 나타납니다. 바로 삭제하시면 됩니다.
+삭제 후에 다시 설치 화면이 나타납니다. 바로 설치하시고, 열어 보셔서 변경 사항을 확인해 보시면 됩니다.
+MCPE 제거를 사용하지 않으시면, 삭제 화면이 뜨지 않고 바로 설치 화면이 나타납니다.
+PocketTool로 스킨과 텍스쳐팩, 모드와 IP 변경으로 더 즐거운 MCPE를 즐겨보세요!
+"
 
-[KOR]-ChaosLand [AD TEAM] http://chaoslnad.tistory.com</string>
+초기 한국어 번역 : [KOR]-ChaosLand [AD TEAM] http://chaosland.tistory.com
+"
+"
+2차 한국어 번역 : 꽁치사마 (Koongchi) http://koongchi123.blog.me
+</string>
 </resources>
