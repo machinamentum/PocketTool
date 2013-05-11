@@ -1,0 +1,60 @@
+<resources>
+  <string name="hello">Ciao mondo, PocketToolActivity!</string>
+  <string name="app_name">PocketTool</string>
+  <string-array name="menu">
+    <item>Uso pelle</item>
+  </string-array>
+  <string name="disclaimer">Disclaimer: Sono PocketTool è in alcun modo affiliati con i siti web collegati qui. Questi sono i link di comunità ha contribuito.</string>
+  <string name="links">Texture Pack: \n</string>
+  <string name="enter_minecraft_username">Per favore Inserisci nome utente minecraft.net, quindi fare clic su Download.</string>
+  <string name="download">Scarica</string>
+  <string name="enter_ip">Immettere IP qui</string>
+  <string name="patch_ip">Patch mio IP!</string>
+  <string name="toolkit">Tool Kit</string>
+  <string name="leveleditor">Editor di livelli</string>
+  <string name="links_button_caption">Link</string>
+  <string name="install_downloaded_content">Installare contenuto scaricato</string>
+  <string name="patch">Patch</string>
+  <string name="change_textures_skin">Cambiare texture/pelle</string>
+  <string name="patch_mod">Patch Mod</string>
+  <string name="change_server_ip">Modifica IP server</string>
+  <string name="download_minecraft_skin">Scarica minecraft.net pelle</string>
+  <string name="skin_downloaded">Scaricato</string>
+  <string name="skin_download_error">Impossibile scaricare skin!</string>
+  <string name="done_patching">Fatto di patch</string>
+  <string name="apply_changes">Applicare le modifiche</string>
+  <string name="manual">Manuale</string>
+  <string name="settings">Impostazioni</string>
+  <string name="please_wait">Attendere prego...</string>
+  <string name="refreshing_resources">Risorse rinfrescante...</string>
+  <string name="about_nbt">Info su</string>
+  <string name="actions_prompt">Che cosa ti piacerebbe fare?</string>
+  <string name="patch_of_course">Patch, naturalmente!</string>
+  <string name="undo">Annulla</string>
+  <string name="use_skin">Uso pelle</string>
+  <string name="uninstall_skin">Disinstallare pelle</string>
+  <string name="use_texture">Utilizzare Texture</string>
+  <string name="using_texture">Utilizzando</string>
+  <string name="magic_ok">Magic va bene!</string>
+  <string name="magic_error">Errore di magia!</string>
+  <string name="disable_uninstall_checkbox_text">Disabilitare la disinstallazione di Minecraft PE</string>
+  <string name="disabling_uninstall">Disattivazione disinstallazione</string>
+  <string name="enabling_uninstall">Abilitazione di disinstallazione</string>
+  <string name="install_menuitem">Installare</string>
+  <string name="use_menuitem">Uso</string>
+  <string name="skins">Pelli</string>
+  <string name="textures">Texture</string>
+  <string name="installed">Installato</string>
+  <string name="edit_inventory">Modifica per inventario</string>
+  <string name="item_damage">Danni</string>
+  <string name="item_count">Conte</string>
+  <string name="item_slotid">Slot ID</string>
+  <string name="item_id">ID</string>
+  <string name="about_nbt_text">PocketTool utilizza la libreria SimpleNBT (formalmente SpoutNBT) sviluppata dal team di SpoutDev. \nSimpleNBT è concesso in licenza sotto la licenza versione SpoutDev 1.\nFor le informazioni di licenza complete per SimpleNBT si prega di visitare https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
+  <!-- The manual is too long, so I split it uup into several lines. -->
+  <string name="manual_text_part_1">Ciao, grazie per aver utilizzato PocketTool! \nTo iniziare, si prega di scaricare il vostro preferito Minecraft PE pelle/texture pack utilizzando browser internet del tuo device\ o utilizzando un computer. Se si utilizza un computer, si prega di trasferimento tuo pelle/texture pack per la \"download\" cartella del vostro sdcard.\n\n</string>
+  <string name="manual_text_part_2">Minecraft PE Demo installato in ordine per PocketTool eseguire correttamente o è necessario disporre di Minecraft PE. \nLaunch PocketTool.\nInstall scaricato pelli/Texture Pack: \nClick \"Install scaricato Content\"\nYou può installare una pelle da lungo premendo la pelle che si desidera installare e fare clic \"Install\"\nYou può installare un pacchetto di texture da lungo premendo il nome di pack texture si desidera installare e fare clic su \"Install\"\nReturn per la \n\n MainScreen (colpo indietro)</string>
+  <string name="manual_text_part_3">Utilizzare installato Skin/Texture Pack: \nClick \"Change texture/Skins\"\nYou può installare una pelle premendo a lungo la pelle che si desidera installare e fare clic su \"Use\"\nYou può installare un pacchetto di texture premendo a lungo il nome di pack texture che si desidera installare e fare clic su \"Use\"\n\n</string>
+  <string name="manual_text_part_4">Installazione: \nPress \"Menu\ del tuo device\" pulsante/tasto, quindi fare clic su \"Apply Changes\" \nConfirm la disinstallazione. Confermare l'installazione. \nLaunch PE Minecraft (o Demo) e godetevi il vostro nuovo pack pelle e consistenza!</string>
+  <?xml version="1.0" encoding="utf-8"?>
+</resources>
