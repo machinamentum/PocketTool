@@ -1,63 +1,60 @@
-<?xml version="1.0" encoding="utf-8"?>
 <resources>
-
-    <string name="hello">Hello World, PocketToolActivity!</string>
-    <string name="app_name">PocketTool</string>
-    <string-array name="menu">
-        <item >Use Skin</item>
-    </string-array>
-        <string name="disclaimer">Disclaimer: PocketTool is in no way affiliated with the linked websites herein. These are community contributed links.</string>
-        <string name="links">Texture Packs:\n</string>
-    <string name="enter_minecraft_username">Please Enter minecraft.net username, then click Download.</string>
-    <string name="download">Download</string>
-    <string name="enter_ip">Enter IP Here</string>
-    <string name="patch_ip">Patch My IP!</string>
-    <string name="toolkit">Tool Kit</string>
-    <string name="leveleditor">Level Editor</string>
-    <string name="links_button_caption">Links</string>
-    <string name="install_downloaded_content">Install Downloaded Content</string>
-    <string name="patch">Patch</string>
-    <string name="change_textures_skin">Change Textures/Skin</string>
-    <string name="patch_mod">Patch Mod</string>
-    <string name="change_server_ip">Change server IP</string>
-    <string name="download_minecraft_skin">Download minecraft.net skin</string>
-    <string name="skin_downloaded">Downloaded</string>
-    <string name="skin_download_error">Could not download skin!</string>
-    <string name="done_patching">Done patching</string>
-    <string name="apply_changes">Apply Changes</string>
-    <string name="manual">Manual</string>
-    <string name="settings">Settings</string>
-    <string name="please_wait">Please wait...</string>
-    <string name="refreshing_resources">Refreshing Resources...</string>
-    <string name="about_nbt">About</string>
-    <string name="actions_prompt">What would you like to do?</string>
-    <string name="patch_of_course">Patch, of course!</string>
-    <string name="undo">Undo</string>
-    <string name="use_skin">Use Skin</string>
-    <string name="uninstall_skin">Uninstall Skin</string>
-    <string name="use_texture">Use Texture</string>
-    <string name="using_texture">Using</string>
-    <string name="magic_ok">Magic Okay!</string>
-    <string name="magic_error">Magic Error!</string>
-    <string name="disable_uninstall_checkbox_text">Disable Uninstall of Minecraft PE</string>
-    <string name="disabling_uninstall">Disabling Uninstall</string>
-    <string name="enabling_uninstall">Enabling Uninstall</string>
-    <string name="install_menuitem">Install</string>
-    <string name="use_menuitem">Use</string>
-    <string name="skins">Skins</string>
-    <string name="textures">Textures</string>
-    <string name="installed">Installed</string>
-    <string name="edit_inventory">Edit Inventory</string>
-    <string name="item_damage">Damage</string>
-    <string name="item_count">Count</string>
-    <string name="item_slotid">Slot ID</string>
-    <string name="item_id">ID</string>
-    <string name="about_nbt_text">PocketTool uses the SimpleNBT (formally SpoutNBT) library developed by the SpoutDev team.\nSimpleNBT is licensed under the SpoutDev License Version 1.\nFor the full licensing information for SimpleNBT please visit https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
-    <!-- The manual is too long, so I split it uup into several lines. -->
-    <string name="manual_text_part_1">Hello, thank you for using PocketTool!\nTo begin, please download your favorite Minecraft PE skin/texture pack using your device\'s internet browser or using a computer. If you use a computer, please transfer your skin/texture pack to the \"download\" folder of your sdcard.\n\n</string>
-    <string name="manual_text_part_2">You must have Minecraft PE or Minecraft PE Demo installed in order for PocketTool to run correctly.\nLaunch PocketTool.\nInstall Downloaded Skins/Texture Packs:\nClick \"Install Downloaded Content\"\nYou may install a skin by long pressing the skin you wish to install and click \"Install\"\nYou may install a texture pack by long pressing the texture pack name you wish to install and click \"Install\"\nReturn to the MainScreen (hit Back button)\n\n</string>
-    <string name="manual_text_part_3">Use Installed Skins/Texture Packs:\nClick \"Change Textures/Skins\"\nYou may install a skin by long pressing the skin you wish to install and click \"Use\"\nYou may install a texture pack by long pressing the texture pack name you wish to install and click \"Use\"\n\n</string>
-    <string name="manual_text_part_4">Install:\nPress your device\'s \"Menu\" button/key then click \"Apply Changes\"\nConfirm the uninstall. Confirm the install.\nLaunch Minecraft PE (or Demo) and enjoy your new skin and texture pack!</string>
-
-
+  <string name="hello">こんにちは世界、PocketToolActivity ！</string>
+  <string name="app_name">PocketTool</string>
+  <string-array name="menu">
+    <item>スキンを使用します。</item>
+  </string-array>
+  <string name="disclaimer">免責事項： PocketTool ではリンク先のウェブサイトに記載されている提携しています。これらは貢献コミュニティへのリンクです。</string>
+  <string name="links">テクスチャ パック: \n</string>
+  <string name="enter_minecraft_username">ください minecraft.net ユーザ名を入力してダウンロード] をクリックします。</string>
+  <string name="download">ダウンロード</string>
+  <string name="enter_ip">ここで ip アドレスを入力します。</string>
+  <string name="patch_ip">自分の IP のパッチ ！</string>
+  <string name="toolkit">ツール キット</string>
+  <string name="leveleditor">レベルのエディター</string>
+  <string name="links_button_caption">リンク</string>
+  <string name="install_downloaded_content">ダウンロードしたコンテンツをインストールします。</string>
+  <string name="patch">パッチ</string>
+  <string name="change_textures_skin">テクスチャ/スキンを変更します。</string>
+  <string name="patch_mod">Mod をパッチします。</string>
+  <string name="change_server_ip">変更するサーバー ip アドレス</string>
+  <string name="download_minecraft_skin">Minecraft.net スキンをダウンロードします。</string>
+  <string name="skin_downloaded">ダウンロード</string>
+  <string name="skin_download_error">皮膚をダウンロードできませんでした ！</string>
+  <string name="done_patching">修正プログラムの適用を行う</string>
+  <string name="apply_changes">変更を適用します。</string>
+  <string name="manual">手動</string>
+  <string name="settings">設定</string>
+  <string name="please_wait">お待ちください。。。</string>
+  <string name="refreshing_resources">リソースを更新しています.</string>
+  <string name="about_nbt">について</string>
+  <string name="actions_prompt">何を行うに希望ですか？</string>
+  <string name="patch_of_course">パッチ、もちろん ！</string>
+  <string name="undo">元に戻す</string>
+  <string name="use_skin">スキンを使用します。</string>
+  <string name="uninstall_skin">スキンをアンインストールします。</string>
+  <string name="use_texture">テクスチャを使用します。</string>
+  <string name="using_texture">使用してください。</string>
+  <string name="magic_ok">魔法は大丈夫 ！</string>
+  <string name="magic_error">魔法のエラー ！</string>
+  <string name="disable_uninstall_checkbox_text">Minecraft PE のアンインストールを無効にします。</string>
+  <string name="disabling_uninstall">アンインストールを無効にします。</string>
+  <string name="enabling_uninstall">アンインストールを有効にします。</string>
+  <string name="install_menuitem">インストール</string>
+  <string name="use_menuitem">使用します。</string>
+  <string name="skins">スキン</string>
+  <string name="textures">テクスチャ</string>
+  <string name="installed">インストールされています。</string>
+  <string name="edit_inventory">インベントリを編集します。</string>
+  <string name="item_damage">損傷</string>
+  <string name="item_count">カウント</string>
+  <string name="item_slotid">スロット ID</string>
+  <string name="item_id">ID</string>
+  <string name="about_nbt_text">SpoutDev チーム \nSimpleNBT によって開発された SimpleNBT (正式 SpoutNBT） ライブラリはライセンスされて PocketTool を使用して SpoutDev ライセンス版 1.\nFor SimpleNBT のライセンスの詳細は、英語の下で https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt を参照してください。</string>
+  <!-- The manual is too long, so I split it uup into several lines. -->
+  <string name="manual_text_part_1">こんにちは、PocketTool を使用するためありがとう ！ \nTo を開始、device\ のインターネット ブラウザーを使用してまたはコンピューターを使用して、お気に入りの Minecraft PE 皮膚/テクスチャ パックをダウンロードしてください。 コンピューターを使用する場合は、転送してください皮膚/テクスチャ パックを \"download\"あなたの sdcard.\n\n のフォルダー</string>
+  <string name="manual_text_part_2">Minecraft PE が必要または Minecraft PE デモをインストール PocketTool を正しく実行するためにします \nLaunch PocketTool.\nInstall Content\ をダウンロードしてスキン/テクスチャ パック: \nClick \"Install をダウンロード"\nYou インストールするスキンを押して長いスキンをインストール可能性がありますとをクリックして \"Install\"\nYou テクスチャ パックでインストールと \"Install\"\nReturn MainScreen （ヒット [戻る] ボタン) \n\n を] をクリックしたいテクスチャ パック名を押すとインストールがあります。</string>
+  <string name="manual_text_part_3">インストールされているスキン/テクスチャ パック： \nClick \"Change テクスチャ/Skins\"\nYou は、長いインストールするスキンを押して、スキンをインストール可能性があります長い \"Use\"\n\n をクリックしてテクスチャ パック名を押すことによって、テクスチャ パックをインストール可能性があります] をクリックします \"Use\"\nYou してください。</string>
+  <string name="manual_text_part_4">インストール： \nPress device\ の \"Menu\"ボタン/キー クリック \"Apply Changes\「\nConfirm アンインストール。インストール。 \nLaunch Minecraft PE (またはデモ) を確認し、新しい皮膚、テクスチャ パックをお楽しみください ！</string>
+  <?xml version="1.0" encoding="utf-8"?>
 </resources>
