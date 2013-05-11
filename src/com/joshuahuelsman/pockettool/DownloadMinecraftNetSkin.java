@@ -43,7 +43,7 @@ public class DownloadMinecraftNetSkin extends Activity implements OnClickListene
 			new Thread(new Runnable() {
 				public void run() {
 					try {
-						URL murl = new URL("http://www.minecraft.net/skin/"
+						URL murl = new URL("http://s3.amazonaws.com/MinecraftSkins/"
 								+ editText.getText() + ".png");
 						File out = new File(APKManipulation.ptdir, "Skins/" 
 								+ editText.getText() + ".png");
