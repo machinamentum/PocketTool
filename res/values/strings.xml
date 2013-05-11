@@ -60,6 +60,7 @@
     <string name="manual_text_part_4">Install:\nPress your device\'s \"Menu\" button/key then click \"Apply Changes\"\nConfirm the uninstall. Confirm the install.\nLaunch Minecraft PE (or Demo) and enjoy your new skin and texture pack!</string>
     <string name="root_not_available">Root access is required on Jellybean devices to use the Toolkit.</string>
     <string name="find_root">Checking for root...</string>
+    <string name="enable_root">Enable root mode</string>
 
 
 </resources>

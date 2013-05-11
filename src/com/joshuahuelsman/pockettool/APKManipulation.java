@@ -258,8 +258,8 @@ public class APKManipulation {
 
 	public static void backup(String apk) throws IOException {
 		File napk = new File(ptdir, "minecraft.apk");
-		// TODO NOTE Jellybean
-		if (android.os.Build.VERSION.SDK_INT >= 16) {
+		//Use root mode
+		if (UserMode.root) {
 			if(Shell.SU.available()) {
 				Log.d("PT", "Calling SU");
 				Shell.SU.run("cp " + apk + " " + napk.getAbsolutePath());

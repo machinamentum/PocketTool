@@ -10,18 +10,13 @@
  *******************************************************************************/
 package com.joshuahuelsman.pockettool;
 
-import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.Handler;
-import android.os.Message;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
-import android.widget.Toast;
-import eu.chainfire.libsuperuser.Shell;
 
 public class MainScreen extends Activity implements OnClickListener {
 	public ProgressDialog dialog;
@@ -41,34 +36,10 @@ public class MainScreen extends Activity implements OnClickListener {
 		toolkit.setOnClickListener(this);
 		leveleditor.setOnClickListener(this);
 		
-		if (android.os.Build.VERSION.SDK_INT >= 16) {
-			dialog = ProgressDialog.show(this, "", 
-	                this.getResources().getString(R.string.find_root), true);
-			
-			Thread checkRoot = new Thread(new Runnable() {
-				
-				public void run() {
-					root = Shell.SU.available();
-					handler.sendEmptyMessage(0);
-				}
-				
-			});
-			checkRoot.start();
-			
-		}
+
 	}
 
-	private Handler handler = new Handler() {
-
-        @Override
-        public void handleMessage(Message msg) {
-            dialog.dismiss();
-            if(!root) {
-				toolkit.setEnabled(false);
-				Toast.makeText(MainScreen.this, R.string.root_not_available, Toast.LENGTH_LONG).show();
-			}
-        }
-    };
+	
 
 	public void onClick(View v) {
 		if(v.getId() == R.id.installdownloadbutton){

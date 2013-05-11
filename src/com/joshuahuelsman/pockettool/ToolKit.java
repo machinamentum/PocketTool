@@ -117,11 +117,13 @@ public class ToolKit extends Activity implements OnClickListener {
 		InputStream is = new FileInputStream(settingf);
 		int disuninstall = is.read();
 		int version = is.read();
+		int root = is.read();
 		//int seenManual = is.read();
 		Log.d("PT", "read: " + version);
 		is.close();
 		Settings.disableUninstall = disuninstall;
 		APKManipulation.minever = version;
+		UserMode.root = (root <= 0 ? false : true);
 		
 		for(int i = 0; i < pinfo.size(); i++){
 			if(pinfo.get(i).applicationInfo.publicSourceDir.contains("minecraftpe")){
@@ -151,6 +153,7 @@ public class ToolKit extends Activity implements OnClickListener {
 		RefreshThread.CREATED_DEFAULTS = 0;
 		APKManipulation.minever = 0;
 		Settings.hasSeenManual = 1;
+		UserMode.root = false;
 	}
 	
 	@Override
