@@ -206,7 +206,7 @@ public class APKManipulation {
 				if (applications.get(n).publicSourceDir
 						.contains("com.mojang.minecraftpe-")) {
 					// TODO NOTE Jellybean
-					if (android.os.Build.VERSION.SDK_INT >= 16) {
+					if (UserMode.root) {
 						//MINECRAFT_APK_PATH = "/mnt/asec/com.mojang.minecraftpe-1/pkg.apk";
 						MINECRAFT_APK_PATH = applications.get(n).sourceDir;
 					} else {
