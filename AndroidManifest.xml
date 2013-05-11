@@ -27,7 +27,7 @@
         <activity android:name=".TexturesSkinsActivity"></activity>
         <activity android:name=".PatchActivity"></activity>
         <activity android:name=".Manual" android:theme="@android:style/Theme.Dialog"></activity>
-        <activity android:screenOrientation="landscape" android:name=".LivePreview"></activity>
+        <activity android:name=".LivePreview"></activity>
         <activity android:name="DownloadMinecraftNetSkin" android:theme="@android:style/Theme.Dialog"></activity>
         <activity android:name="LevelSelector"></activity>
         <activity android:name="LevelEditor"></activity>
