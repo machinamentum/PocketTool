@@ -58,6 +58,8 @@
     <string name="manual_text_part_2">You must have Minecraft PE or Minecraft PE Demo installed in order for PocketTool to run correctly.\nLaunch PocketTool.\nInstall Downloaded Skins/Texture Packs:\nClick \"Install Downloaded Content\"\nYou may install a skin by long pressing the skin you wish to install and click \"Install\"\nYou may install a texture pack by long pressing the texture pack name you wish to install and click \"Install\"\nReturn to the MainScreen (hit Back button)\n\n</string>
     <string name="manual_text_part_3">Use Installed Skins/Texture Packs:\nClick \"Change Textures/Skins\"\nYou may install a skin by long pressing the skin you wish to install and click \"Use\"\nYou may install a texture pack by long pressing the texture pack name you wish to install and click \"Use\"\n\n</string>
     <string name="manual_text_part_4">Install:\nPress your device\'s \"Menu\" button/key then click \"Apply Changes\"\nConfirm the uninstall. Confirm the install.\nLaunch Minecraft PE (or Demo) and enjoy your new skin and texture pack!</string>
+    <string name="root_not_available">Root access is required on Jellybean devices to use the Toolkit.</string>
+    <string name="find_root">Checking for root...</string>
 
 
 </resources>

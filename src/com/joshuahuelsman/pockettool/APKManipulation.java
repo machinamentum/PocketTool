@@ -23,23 +23,27 @@ import android.content.Intent;
 import android.content.pm.ApplicationInfo;
 import android.net.Uri;
 import android.os.Environment;
+import android.util.Log;
+import eu.chainfire.libsuperuser.Shell;
 
 public class APKManipulation {
 	private static String MINECRAFT_APK_PATH;
 	// private String MINECRAFT_DEMO_APK_PATH;
-	//private int resume = 0;
+	// private int resume = 0;
 	public static int minever;
 	public static int USE_DEMO = 0;
-	//private static ZipUtils zipu;
-	//private Context context;
-	public final static File ptdir = new File(Environment.getExternalStorageDirectory(),
+	// private static ZipUtils zipu;
+	// private Context context;
+	public final static File ptdir = new File(
+			Environment.getExternalStorageDirectory(),
 			"/Android/data/com.joshuahuelsman.pockettool/");
 	private static Activity main;
+
 	public APKManipulation(Activity maina) {
-		//zipu = new ZipUtils();
+		// zipu = new ZipUtils();
 		main = maina;
 	}
-	
+
 	public void uninstall() {
 		Uri packageURI;
 		if (USE_DEMO > 0) {
@@ -52,21 +56,21 @@ public class APKManipulation {
 	}
 
 	public void install() throws IOException {
-		
+
 		File napk = new File(ptdir, "minecraft-cs.apk");
 		Intent intent = new Intent(Intent.ACTION_VIEW);
 		intent.setDataAndType(Uri.fromFile(napk),
 				"application/vnd.android.package-archive");
 		main.startActivityForResult(intent, 1);
 	}
-	
-	public void update() throws IOException{
+
+	public void update() throws IOException {
 		applyChanges();
-		
+
 	}
-	
+
 	public void addChar(File chrf) throws IOException {
-		
+
 		File tchrf = new File(ptdir, "/temp/assets/mob/char.png");
 		tchrf.delete();
 		InputStream is = new FileInputStream(chrf);
@@ -79,54 +83,51 @@ public class APKManipulation {
 		os.close();
 
 	}
-	
+
 	public void addTexture(File text) throws IOException {
 		File out = new File(ptdir, "/Textures/" + text.getName());
 		File temp = new File(ptdir, "/temp");
-		ZipUtils.copyFolder(out, temp); 
-		
+		ZipUtils.copyFolder(out, temp);
+
 	}
-	
-	public static void refresh() throws IOException{
-		if(checkForMinecraft() == 2){
-			//Toast.makeText(main, "error", Toast.LENGTH_SHORT).show();
-		}else{
+
+	public static void refresh() throws IOException {
+		if (checkForMinecraft() == 2) {
+			// Toast.makeText(main, "error", Toast.LENGTH_SHORT).show();
+		} else {
 			makeDefaultDirectories();
 			int backup = checkForBackup();
 			RefreshThread.CREATED_DEFAULTS = backup;
 			checkForOriginals();
-			
-			
+
 			File origfold = new File(ptdir, "Textures/originals/");
 			File tempfold = new File(ptdir, "temp/");
-			if(!tempfold.exists()){
+			if (!tempfold.exists()) {
 				ZipUtils.copyFolder(origfold, tempfold);
 			}
 		}
-		
+
 	}
 
 	public void applyChanges() {
 
-		//File origfold = new File(ptfold, "Textures/originals/");
+		// File origfold = new File(ptfold, "Textures/originals/");
 		File tempfold = new File(ptdir, "temp/");
-		//File apk;
+		// File apk;
 		File newapk = new File(ptdir, "minecraft-c.apk");
 		File signapk = new File(ptdir, "minecraft-cs.apk");
-		/*if (minever == 0) {
-			apk = new File(ptfold, "minecraft.apk");
-		} else {
-			apk = new File(ptfold, "minecraft-demo.apk");
-		}*/
-		
-		
+		/*
+		 * if (minever == 0) { apk = new File(ptfold, "minecraft.apk"); } else {
+		 * apk = new File(ptfold, "minecraft-demo.apk"); }
+		 */
+
 		ZipThread zt = new ZipThread(this, signapk, tempfold, newapk);
 		zt.start();
-		
+
 	}
-	
+
 	public static void makeDefaultDirectories() {
-	
+
 		File textures = new File(ptdir, "Textures/");
 		File skins = new File(ptdir, "Skins/");
 		textures.mkdirs();
@@ -136,11 +137,11 @@ public class APKManipulation {
 	public static void makeOriginals() {
 		File origfold = new File(ptdir, "Textures/originals/");
 		File apk;
-		//if (minever == 0) {
-			apk = new File(ptdir, "minecraft.apk");
-		//} else {
-		//	apk = new File(ptfold, "minecraft-demo.apk");
-		//}
+		// if (minever == 0) {
+		apk = new File(ptdir, "minecraft.apk");
+		// } else {
+		// apk = new File(ptfold, "minecraft-demo.apk");
+		// }
 		origfold.mkdir();
 		ZipUtils.unzipArchive(apk, origfold);
 	}
@@ -186,26 +187,32 @@ public class APKManipulation {
 
 	public static boolean hasBackup() {
 		File backup;
-		//if (minever == 0) {
-			backup = new File(ptdir, "minecraft.apk");
-		/*} else {
-			backup = new File(Environment.getExternalStorageDirectory()
-					+ "/PocketTool/minecraft-demo.apk");
-		}*/
+		// if (minever == 0) {
+		backup = new File(ptdir, "minecraft.apk");
+		/*
+		 * } else { backup = new File(Environment.getExternalStorageDirectory()
+		 * + "/PocketTool/minecraft-demo.apk"); }
+		 */
 		return backup.exists();
 	}
 
 	public static boolean hasMinecraft() {
-		List<ApplicationInfo> applications = main.getApplication().getPackageManager()
-				.getInstalledApplications(0);
+		List<ApplicationInfo> applications = main.getApplication()
+				.getPackageManager().getInstalledApplications(0);
 		for (int n = 0; n < applications.size(); n++) {
 			if ((applications.get(n).flags & ApplicationInfo.FLAG_SYSTEM) == 1) {
 				// This is System application
 			} else {
 				if (applications.get(n).publicSourceDir
 						.contains("com.mojang.minecraftpe-")) {
-					MINECRAFT_APK_PATH = applications.get(n).publicSourceDir;
-					//minever = 0;
+					// TODO NOTE Jellybean
+					if (android.os.Build.VERSION.SDK_INT >= 16) {
+						//MINECRAFT_APK_PATH = "/mnt/asec/com.mojang.minecraftpe-1/pkg.apk";
+						MINECRAFT_APK_PATH = applications.get(n).sourceDir;
+					} else {
+						MINECRAFT_APK_PATH = applications.get(n).publicSourceDir;
+					}
+					// minever = 0;
 					return true;
 				}
 			}
@@ -213,22 +220,24 @@ public class APKManipulation {
 		return false;
 	}
 
+	@Deprecated
 	public static boolean hasMinecraftDemo() {
-		List<ApplicationInfo> applications = main.getApplicationContext().getPackageManager()
-				.getInstalledApplications(0);
+		List<ApplicationInfo> applications = main.getApplicationContext()
+				.getPackageManager().getInstalledApplications(0);
 		for (int n = 0; n < applications.size(); n++) {
 			if ((applications.get(n).flags & ApplicationInfo.FLAG_SYSTEM) == 1) {
-				//Log.d("APK", applications.get(n).publicSourceDir);
+				// Log.d("APK", applications.get(n).publicSourceDir);
 			} else {
-				
+
 				if (applications.get(n).publicSourceDir
 						.contains("com.mojang.minecraftpe.demo")) {
+
 					MINECRAFT_APK_PATH = applications.get(n).publicSourceDir;
-					//minever = 1;
-					USE_DEMO= 1;
+					// minever = 1;
+					USE_DEMO = 1;
 					return true;
 				}
-				
+
 			}
 		}
 		return false;
@@ -249,6 +258,16 @@ public class APKManipulation {
 
 	public static void backup(String apk) throws IOException {
 		File napk = new File(ptdir, "minecraft.apk");
-		copy(apk, napk.getAbsolutePath());
+		// TODO NOTE Jellybean
+		if (android.os.Build.VERSION.SDK_INT >= 16) {
+			if(Shell.SU.available()) {
+				Log.d("PT", "Calling SU");
+				Shell.SU.run("cp " + apk + " " + napk.getAbsolutePath());
+			}else {
+				Log.d("PT", "SU not available");
+			}
+		} else {
+			copy(apk, napk.getAbsolutePath());
+		}
 	}
 }
