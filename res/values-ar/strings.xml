@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="hello">مرحبا العالم، بوكيتولاكتيفيتي!</string>
   <string name="app_name">بوكيتول</string>
@@ -56,5 +57,4 @@
   <string name="manual_text_part_2">يجب أن يكون لديك Minecraft PE أو تثبيت Minecraft PE تجريبي من أجل بوكيتول لتشغيل بشكل صحيح. \nLaunch PocketTool.\nInstall تحميل تحميل Content\ جلود/نسيج حزم: \nClick \"Install" \nYou قد تثبيت جلد بطويلة ضغط الجلد كنت ترغب في تثبيت وانقر \"Install\"\nYou قد تثبيت حزمة الملمس بطويلة الضغط اسم حزمة الملمس كنت ترغب في تثبيت ثم انقر فوق \"Install\"\nReturn إلى \n\n MainScreen (ضرب الزر الخلف)</string>
   <string name="manual_text_part_3">استخدام تثبيت الجلود/نسيج حزم: \nClick \"Change القوام/Skins\" \nYou قد تثبيت جلد بالضغط الطويل على الجلد كنت ترغب في تثبيت وانقر \"Use\"\nYou قد تثبيت حزمة الملمس بالضغط الطويل على اسم حزمة الملمس كنت ترغب في تثبيت ثم انقر فوق \"Use\"\n\n</string>
   <string name="manual_text_part_4">تثبيت: \nPress \"Menu\ device\ الخاص بك"زر/مفتاح، ثم انقر فوق \"Apply Changes\" \nConfirm إلغاء التثبيت. تأكيد تثبيت. \nLaunch Minecraft PE (أو التجريبي) والاستمتاع بحزمة الجلد والنسيج الجديد الخاص بك!</string>
-  <?xml version="1.0" encoding="utf-8"?>
 </resources>

@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="hello">Ciao mondo, PocketToolActivity!</string>
   <string name="app_name">PocketTool</string>
@@ -55,6 +56,5 @@
   <string name="manual_text_part_1">Ciao, grazie per aver utilizzato PocketTool! \nTo iniziare, si prega di scaricare il vostro preferito Minecraft PE pelle/texture pack utilizzando browser internet del tuo device\ o utilizzando un computer. Se si utilizza un computer, si prega di trasferimento tuo pelle/texture pack per la \"download\" cartella del vostro sdcard.\n\n</string>
   <string name="manual_text_part_2">Minecraft PE Demo installato in ordine per PocketTool eseguire correttamente o è necessario disporre di Minecraft PE. \nLaunch PocketTool.\nInstall scaricato pelli/Texture Pack: \nClick \"Install scaricato Content\"\nYou può installare una pelle da lungo premendo la pelle che si desidera installare e fare clic \"Install\"\nYou può installare un pacchetto di texture da lungo premendo il nome di pack texture si desidera installare e fare clic su \"Install\"\nReturn per la \n\n MainScreen (colpo indietro)</string>
   <string name="manual_text_part_3">Utilizzare installato Skin/Texture Pack: \nClick \"Change texture/Skins\"\nYou può installare una pelle premendo a lungo la pelle che si desidera installare e fare clic su \"Use\"\nYou può installare un pacchetto di texture premendo a lungo il nome di pack texture che si desidera installare e fare clic su \"Use\"\n\n</string>
-  <string name="manual_text_part_4">Installazione: \nPress \"Menu\ del tuo device\" pulsante/tasto, quindi fare clic su \"Apply Changes\" \nConfirm la disinstallazione. Confermare l'installazione. \nLaunch PE Minecraft (o Demo) e godetevi il vostro nuovo pack pelle e consistenza!</string>
-  <?xml version="1.0" encoding="utf-8"?>
+  <string name="manual_text_part_4">Installazione: \nPress \"Menu\ del tuo device\" pulsante/tasto, quindi fare clic su \"Apply Changes\" \nConfirm la disinstallazione. Confermare l\'installazione. \nLaunch PE Minecraft (o Demo) e godetevi il vostro nuovo pack pelle e consistenza!</string>
 </resources>

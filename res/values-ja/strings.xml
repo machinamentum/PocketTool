@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="hello">こんにちは世界、PocketToolActivity ！</string>
   <string name="app_name">PocketTool</string>
@@ -56,5 +57,4 @@
   <string name="manual_text_part_2">Minecraft PE が必要または Minecraft PE デモをインストール PocketTool を正しく実行するためにします \nLaunch PocketTool.\nInstall Content\ をダウンロードしてスキン/テクスチャ パック: \nClick \"Install をダウンロード"\nYou インストールするスキンを押して長いスキンをインストール可能性がありますとをクリックして \"Install\"\nYou テクスチャ パックでインストールと \"Install\"\nReturn MainScreen （ヒット [戻る] ボタン) \n\n を] をクリックしたいテクスチャ パック名を押すとインストールがあります。</string>
   <string name="manual_text_part_3">インストールされているスキン/テクスチャ パック： \nClick \"Change テクスチャ/Skins\"\nYou は、長いインストールするスキンを押して、スキンをインストール可能性があります長い \"Use\"\n\n をクリックしてテクスチャ パック名を押すことによって、テクスチャ パックをインストール可能性があります] をクリックします \"Use\"\nYou してください。</string>
   <string name="manual_text_part_4">インストール： \nPress device\ の \"Menu\"ボタン/キー クリック \"Apply Changes\「\nConfirm アンインストール。インストール。 \nLaunch Minecraft PE (またはデモ) を確認し、新しい皮膚、テクスチャ パックをお楽しみください ！</string>
-  <?xml version="1.0" encoding="utf-8"?>
 </resources>

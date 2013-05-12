@@ -1,3 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
 <resources>
   <string name="hello">Hallo Welt, PocketToolActivity!</string>
   <string name="app_name">PocketTool</string>
@@ -56,5 +57,4 @@
   <string name="manual_text_part_2">Sie muss Minecraft PE oder PE-Demo von Minecraft installiert in Reihenfolge für PocketTool ordnungsgemäß ausgeführt. \nLaunch PocketTool.\nInstall heruntergeladen Skins/Texture Packs: \nClick \"Install heruntergeladen Content\"\nYou kann einen Skin installieren, indem lange drücken die Haut, die Sie installieren möchten und klicken Sie auf \"Install\"\nYou kann ein Texture-Pack installieren, indem lange drücken den Textur Pack-Namen, die Sie möchten, installieren, und klicken Sie auf \"Install\"\nReturn auf der Hauptseite (hit Back Taste) \n\n</string>
   <string name="manual_text_part_3">Verwenden Sie installiert Skins/Texture Packs: \nClick \"Change Texturen/Skins\"\nYou kann einen Skin installieren, durch langes Drücken der Haut, die Sie installieren möchten und klicken Sie auf \"Use\"\nYou kann ein Texture-Pack installieren, durch langes Drücken der Textur-Pack-Name, die Sie verwenden möchten, installieren, und klicken Sie auf \"Use\"\n\n</string>
   <string name="manual_text_part_4">Installation: \nPress Ihr Device\ \"Menu\" Schaltfläche/Schlüssel und klicken Sie auf \"Apply Changes\" \nConfirm die Deinstallation. Bestätigen Sie die Install. \nLaunch Minecraft-PE (oder Demo) und genießen Sie Ihre neue Haut und Textur-Pack!</string>
-  <?xml version="1.0" encoding="utf-8"?>
 </resources>
