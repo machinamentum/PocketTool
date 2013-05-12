@@ -50,7 +50,6 @@ public class ToolKit extends Activity implements OnClickListener {
 			e1.printStackTrace();
 		}
 		
-		RefreshThread rt = new RefreshThread();
 		
 		apkm = new APKManipulation(this);
 		
@@ -67,10 +66,24 @@ public class ToolKit extends Activity implements OnClickListener {
 		ippatchbutton.setOnClickListener(this);
 		downloadmcskinbutton.setOnClickListener(this);
 		//Toast.makeText(this, "Minecraft Version Code: " + APKManipulation.minever, Toast.LENGTH_SHORT).show();
-		 dialog = ProgressDialog.show(this, "", 
+		 
+		//dialog.dismiss();
+	}
+	
+	@Override
+	public void onStart() {
+		try {
+			checkForSettings();
+			getSettings();
+		} catch (IOException e1) {
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
+		RefreshThread rt = new RefreshThread();
+		dialog = ProgressDialog.show(this, "", 
                 this.getResources().getString(R.string.refreshing_resources), true);
 		rt.start();
-		//dialog.dismiss();
+		super.onStart();
 	}
 
 	public void onClick(View v) {
@@ -120,6 +133,7 @@ public class ToolKit extends Activity implements OnClickListener {
 		int root = is.read();
 		//int seenManual = is.read();
 		Log.d("PT", "read: " + version);
+		Log.d("PT", "root? " + root);
 		is.close();
 		Settings.disableUninstall = disuninstall;
 		APKManipulation.minever = version;

@@ -17,6 +17,7 @@ import java.io.OutputStream;
 
 import android.app.Activity;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.Message;
@@ -31,6 +32,7 @@ public class Settings extends Activity {
 	public static int hasSeenManual;
 	private ProgressDialog dialog;
 	private CheckBox rootBox;
+	private boolean returnHome = false;
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
@@ -86,16 +88,30 @@ public class Settings extends Activity {
 		checkRoot.start();
 
 	}
-
+	
 	@Override
-	public void onDestroy() {
-		super.onDestroy();
+	public void onBackPressed() {
 		try {
 			saveSettings();
+			if(returnHome) {
+				returnHome = false;
+				Log.d("PT", "Returning home");
+				Intent intent = new Intent(getApplicationContext(), MainScreen.class);
+				intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP);
+				startActivity(intent);
+			}else{
+				finish();
+			}
 		} catch (IOException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public void onDestroy() {
+		super.onDestroy();
+		
 	}
 
 	public static void saveSettings() throws IOException {
@@ -113,11 +129,16 @@ public class Settings extends Activity {
 		@Override
 		public void handleMessage(Message msg) {
 			dialog.dismiss();
+			rootBox.setChecked(rootFlag);
 			if (rootFlag) {
 				rootFlag = false;
 				UserMode.root = true;
+				Log.d("PT", "Nuking PT data");
+				APKManipulation.wipePTBackupData();
+				Log.d("PT", "Done");
+				returnHome = true;
 			}
-			rootBox.setChecked(UserMode.root);
+			
 		}
 	};
 }

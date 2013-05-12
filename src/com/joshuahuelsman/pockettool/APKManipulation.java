@@ -270,4 +270,17 @@ public class APKManipulation {
 			copy(apk, napk.getAbsolutePath());
 		}
 	}
+	
+	public static void wipePTBackupData() {
+		File origfold = new File(ptdir, "Textures/originals/");
+		File napk = new File(ptdir, "minecraft.apk");
+		File napkc = new File(ptdir, "minecraft-c.apk");
+		File napkcs = new File(ptdir, "minecraft-cs.apk");
+		File tempfold = new File(ptdir, "temp/");
+		ZipUtils.deleteDir(origfold);
+		ZipUtils.deleteDir(tempfold);
+		napk.delete();
+		napkc.delete();
+		napkcs.delete();
+	}
 }
