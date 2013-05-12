@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hola, PocketToolActivity!</string>
+    <string name="app_name">PocketTool</string>
+    <string-array name="menu">
+        <item >Usar Skin</item>
+    </string-array>
+        <string name="disclaimer">Descargo de responsabilidad: PocketTool no esta relacionado con ninguna de las webs dadas en esta aplicación. Estas webs son dadas por la comunidad.</string>
+        <string name="links">Paquetes de Texturas:\n</string>
+    <string name="enter_minecraft_username">Porfavor ingrese un nombre de usuario de minecraft.pe, y luego presione descargar.</string>
+    <string name="download">Descargar</string>
+    <string name="enter_ip">Ingrese la IP Aqui</string>
+    <string name="patch_ip">Cambiar mi IP!</string>
+    <string name="toolkit">Kit de Herramientas</string>
+    <string name="leveleditor">Editor de Niveles</string>
+    <string name="links_button_caption">Enlaces</string>
+    <string name="install_downloaded_content">Instalar Contenido Descargado</string>
+    <string name="patch">Instalar</string>
+    <string name="change_textures_skin">Cambiar Textura o Skin</string>
+    <string name="patch_mod">Instalar Mod</string>
+    <string name="change_server_ip">Cambiar mi servidor IP</string>
+    <string name="download_minecraft_skin">Descargar una skin de minecraft.net</string>
+    <string name="skin_downloaded">Descargas</string>
+    <string name="skin_download_error">No se puede decargar la skin!</string>
+    <string name="done_patching">Instalación echa</string>
+    <string name="apply_changes">Aplicar Cambios</string>
+    <string name="manual">Instrucciones</string>
+    <string name="settings">Configuracion</string>
+    <string name="please_wait">Espera porfavor...</string>
+    <string name="refreshing_resources">Refrescar...</string>
+    <string name="about_nbt">Información</string>
+    <string name="actions_prompt">Que te gustaria hacer?</string>
+    <string name="patch_of_course">Instalar, por supuesto!</string>
+    <string name="undo">Deshacer</string>
+    <string name="use_skin">Usar Skin</string>
+    <string name="uninstall_skin">Desinstalar Skin</string>
+    <string name="use_texture">Usar Textura</string>
+    <string name="using_texture">Usando</string>
+    <string name="magic_ok">Magia Lista!</string>
+    <string name="magic_error">Error con la magia!</string>
+    <string name="disable_uninstall_checkbox_text">Deshabilitar la desinstalacion de Minecraft PE</string>
+    <string name="disabling_uninstall">Deshabilitar la desinstalacion</string>
+    <string name="enabling_uninstall">Habilitar la desinstalacion</string>
+    <string name="install_menuitem">Instalar</string>
+    <string name="use_menuitem">Usar</string>
+    <string name="skins">Skins</string>
+    <string name="textures">Texturas</string>
+    <string name="installed">Instalado</string>
+    <string name="edit_inventory">Editar Inventario</string>
+    <string name="item_damage">Daño</string>
+    <string name="item_count">Cantidad</string>
+    <string name="item_slotid">ID del objeto</string>
+    <string name="item_id">ID</string>
+    <string name="about_nbt_text">PocketTool utiliza el SimpleNBT (formalmente SpoutNBT), biblioteca desarrollada por el equipo de SpoutDev.\nSimpleNBT esta bajo la licencia SpoutDev Versión 1.\nPara la versión completa de la licencia porfavor visita https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
+    <!-- The manual is too long, so I split it uup into several lines. -->
+    <string name="manual_text_part_1">Hola, gracias por utilizar PocketTool!\nPara empezar, porfavor descarga la skin o textura para Minecraft PE utilizando tu celular o usando la computadora. Si utilizas la computadora, porfavor transfiere la skin o textura a la carpeta download en tu tarjetaSD.\n\n</string>
+    <string name="manual_text_part_2">Debes tener Minecraft PE or Minecraft PE Demo instalado para que PocketTool funciones correctamente.\nAbre PocketTool.\nInstalar Skins o Texturas Descargadas:\nPreciona \"Instalar Contenido Descargado\"\nPara instalar una skin debes mantener precionada la skin que deseas instalar y preciona \"Instalar\"\nPara instalar una textura manten precionado el nombre de la textura que deceas instalar y preciona \"Instalar\"\nRegresar a la pantalla de inicio (boton de regresar)\n\n</string>
+    <string name="manual_text_part_3">Usar Skins o Texturas descargadas:\nPreciona \"Cambiar Textura o Skin\"\nPara usar una skin instalada debes mantenerla precionada y precionar \"Usar\"\nPara usar una textura intalada debes mantener precionado el nombre y precionar \"Use\"\n\n</string>
+    <string name="manual_text_part_4">Instalación:\nPreciona en tu telefono el boton de \"Menu\" y preciona \"Aplicar Cambios\"\nConfirma la desinstalación. Confirma la instalación.\nAbre Minecraft PE (o el Demo) y disfruta de tu nueva skin o textura!</string>
+
+
+</resources>

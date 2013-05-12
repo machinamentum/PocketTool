@@ -1,0 +1,60 @@
+<resources>
+  <string name="hello">مرحبا العالم، بوكيتولاكتيفيتي!</string>
+  <string name="app_name">بوكيتول</string>
+  <string-array name="menu">
+    <item>استخدام الجلد</item>
+  </string-array>
+  <string name="disclaimer">تنويه: بوكيتول في أي حال من الأحوال تنتسب المواقع المرتبطة هذه الوثيقة. هذه روابط المجتمع وأسهم.</string>
+  <string name="links">نسيج حزم: \n</string>
+  <string name="enter_minecraft_username">الرجاء إدخال اسم المستخدم minecraft.net، ثم انقر فوق تحميل.</string>
+  <string name="download">تحميل</string>
+  <string name="enter_ip">أدخل الملكية الفكرية هنا</string>
+  <string name="patch_ip">التصحيح بلدي الملكية الفكرية!</string>
+  <string name="toolkit">مجموعة أدوات</string>
+  <string name="leveleditor">مستوى محرر</string>
+  <string name="links_button_caption">روابط</string>
+  <string name="install_downloaded_content">تثبيت المحتوى الذي تم تنزيله</string>
+  <string name="patch">التصحيح</string>
+  <string name="change_textures_skin">تغيير القوام/الجلد</string>
+  <string name="patch_mod">وزارة الدفاع التصحيح</string>
+  <string name="change_server_ip">تغيير ملقم IP</string>
+  <string name="download_minecraft_skin">تحميل minecraft.net الجلد</string>
+  <string name="skin_downloaded">تم تحميل</string>
+  <string name="skin_download_error">لا يمكن تحميل الجلد!</string>
+  <string name="done_patching">يتم الترقيع</string>
+  <string name="apply_changes">تطبيق التغييرات</string>
+  <string name="manual">دليل</string>
+  <string name="settings">إعدادات</string>
+  <string name="please_wait">الرجاء الانتظار...</string>
+  <string name="refreshing_resources">تحديث الموارد...</string>
+  <string name="about_nbt">حول</string>
+  <string name="actions_prompt">ماذا تريد أن تفعل؟</string>
+  <string name="patch_of_course">التصحيح، بطبيعة الحال!</string>
+  <string name="undo">التراجع عن</string>
+  <string name="use_skin">استخدام الجلد</string>
+  <string name="uninstall_skin">إلغاء تثبيت الجلد</string>
+  <string name="use_texture">استخدام مادة</string>
+  <string name="using_texture">باستخدام</string>
+  <string name="magic_ok">سحر بخير!</string>
+  <string name="magic_error">خطأ سحر!</string>
+  <string name="disable_uninstall_checkbox_text">قم بتعطيل إلغاء التثبيت من Minecraft PE</string>
+  <string name="disabling_uninstall">تعطيل إلغاء التثبيت</string>
+  <string name="enabling_uninstall">تمكين إلغاء التثبيت</string>
+  <string name="install_menuitem">تثبيت</string>
+  <string name="use_menuitem">استخدام</string>
+  <string name="skins">جلود</string>
+  <string name="textures">القوام</string>
+  <string name="installed">تثبيت</string>
+  <string name="edit_inventory">تحرير قائمة الجرد</string>
+  <string name="item_damage">الأضرار</string>
+  <string name="item_count">العد</string>
+  <string name="item_slotid">معرف فتحه</string>
+  <string name="item_id">معرف</string>
+  <string name="about_nbt_text">استخدامات بوكيتول مرخص مكتبة سيمبلينبت (رسميا سبوتنبت) وضعتها سبوتديف الفريق. \nSimpleNBT تحت 1.\nFor "سبوتديف ترخيص الإصدار" معلومات الترخيص الكامل سيمبلينبت، يرجى زيارة https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt</string>
+  <!-- The manual is too long, so I split it uup into several lines. -->
+  <string name="manual_text_part_1">مرحبا، شكرا لاستخدامك بوكيتول! \nTo البدء، الرجاء تحميل الخاص بك حزمة نسيج الجلد/Minecraft PE المفضلة لديك باستخدام مستعرض إنترنت الخاص بك device\ أو باستخدام جهاز كمبيوتر. إذا كنت تستخدم جهاز كمبيوتر، الرجاء نقل حزمة الجلد/الملمس الخاص بك \"download\" المجلد الخاص بك sdcard.\n\n</string>
+  <string name="manual_text_part_2">يجب أن يكون لديك Minecraft PE أو تثبيت Minecraft PE تجريبي من أجل بوكيتول لتشغيل بشكل صحيح. \nLaunch PocketTool.\nInstall تحميل تحميل Content\ جلود/نسيج حزم: \nClick \"Install" \nYou قد تثبيت جلد بطويلة ضغط الجلد كنت ترغب في تثبيت وانقر \"Install\"\nYou قد تثبيت حزمة الملمس بطويلة الضغط اسم حزمة الملمس كنت ترغب في تثبيت ثم انقر فوق \"Install\"\nReturn إلى \n\n MainScreen (ضرب الزر الخلف)</string>
+  <string name="manual_text_part_3">استخدام تثبيت الجلود/نسيج حزم: \nClick \"Change القوام/Skins\" \nYou قد تثبيت جلد بالضغط الطويل على الجلد كنت ترغب في تثبيت وانقر \"Use\"\nYou قد تثبيت حزمة الملمس بالضغط الطويل على اسم حزمة الملمس كنت ترغب في تثبيت ثم انقر فوق \"Use\"\n\n</string>
+  <string name="manual_text_part_4">تثبيت: \nPress \"Menu\ device\ الخاص بك"زر/مفتاح، ثم انقر فوق \"Apply Changes\" \nConfirm إلغاء التثبيت. تأكيد تثبيت. \nLaunch Minecraft PE (أو التجريبي) والاستمتاع بحزمة الجلد والنسيج الجديد الخاص بك!</string>
+  <?xml version="1.0" encoding="utf-8"?>
+</resources>
