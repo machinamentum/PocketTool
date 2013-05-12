@@ -1,0 +1,60 @@
+<resources>
+  <string name="hello">こんにちは世界、PocketToolActivity ！</string>
+  <string name="app_name">PocketTool</string>
+  <string-array name="menu">
+    <item>スキンを使用します。</item>
+  </string-array>
+  <string name="disclaimer">免責事項： PocketTool ではリンク先のウェブサイトに記載されている提携しています。これらは貢献コミュニティへのリンクです。</string>
+  <string name="links">テクスチャ パック: \n</string>
+  <string name="enter_minecraft_username">ください minecraft.net ユーザ名を入力してダウンロード] をクリックします。</string>
+  <string name="download">ダウンロード</string>
+  <string name="enter_ip">ここで ip アドレスを入力します。</string>
+  <string name="patch_ip">自分の IP のパッチ ！</string>
+  <string name="toolkit">ツール キット</string>
+  <string name="leveleditor">レベルのエディター</string>
+  <string name="links_button_caption">リンク</string>
+  <string name="install_downloaded_content">ダウンロードしたコンテンツをインストールします。</string>
+  <string name="patch">パッチ</string>
+  <string name="change_textures_skin">テクスチャ/スキンを変更します。</string>
+  <string name="patch_mod">Mod をパッチします。</string>
+  <string name="change_server_ip">変更するサーバー ip アドレス</string>
+  <string name="download_minecraft_skin">Minecraft.net スキンをダウンロードします。</string>
+  <string name="skin_downloaded">ダウンロード</string>
+  <string name="skin_download_error">皮膚をダウンロードできませんでした ！</string>
+  <string name="done_patching">修正プログラムの適用を行う</string>
+  <string name="apply_changes">変更を適用します。</string>
+  <string name="manual">手動</string>
+  <string name="settings">設定</string>
+  <string name="please_wait">お待ちください。。。</string>
+  <string name="refreshing_resources">リソースを更新しています.</string>
+  <string name="about_nbt">について</string>
+  <string name="actions_prompt">何を行うに希望ですか？</string>
+  <string name="patch_of_course">パッチ、もちろん ！</string>
+  <string name="undo">元に戻す</string>
+  <string name="use_skin">スキンを使用します。</string>
+  <string name="uninstall_skin">スキンをアンインストールします。</string>
+  <string name="use_texture">テクスチャを使用します。</string>
+  <string name="using_texture">使用してください。</string>
+  <string name="magic_ok">魔法は大丈夫 ！</string>
+  <string name="magic_error">魔法のエラー ！</string>
+  <string name="disable_uninstall_checkbox_text">Minecraft PE のアンインストールを無効にします。</string>
+  <string name="disabling_uninstall">アンインストールを無効にします。</string>
+  <string name="enabling_uninstall">アンインストールを有効にします。</string>
+  <string name="install_menuitem">インストール</string>
+  <string name="use_menuitem">使用します。</string>
+  <string name="skins">スキン</string>
+  <string name="textures">テクスチャ</string>
+  <string name="installed">インストールされています。</string>
+  <string name="edit_inventory">インベントリを編集します。</string>
+  <string name="item_damage">損傷</string>
+  <string name="item_count">カウント</string>
+  <string name="item_slotid">スロット ID</string>
+  <string name="item_id">ID</string>
+  <string name="about_nbt_text">SpoutDev チーム \nSimpleNBT によって開発された SimpleNBT (正式 SpoutNBT） ライブラリはライセンスされて PocketTool を使用して SpoutDev ライセンス版 1.\nFor SimpleNBT のライセンスの詳細は、英語の下で https://github.com/SpoutDev/SimpleNBT/blob/master/LICENSE.txt を参照してください。</string>
+  <!-- The manual is too long, so I split it uup into several lines. -->
+  <string name="manual_text_part_1">こんにちは、PocketTool を使用するためありがとう ！ \nTo を開始、device\ のインターネット ブラウザーを使用してまたはコンピューターを使用して、お気に入りの Minecraft PE 皮膚/テクスチャ パックをダウンロードしてください。 コンピューターを使用する場合は、転送してください皮膚/テクスチャ パックを \"download\"あなたの sdcard.\n\n のフォルダー</string>
+  <string name="manual_text_part_2">Minecraft PE が必要または Minecraft PE デモをインストール PocketTool を正しく実行するためにします \nLaunch PocketTool.\nInstall Content\ をダウンロードしてスキン/テクスチャ パック: \nClick \"Install をダウンロード"\nYou インストールするスキンを押して長いスキンをインストール可能性がありますとをクリックして \"Install\"\nYou テクスチャ パックでインストールと \"Install\"\nReturn MainScreen （ヒット [戻る] ボタン) \n\n を] をクリックしたいテクスチャ パック名を押すとインストールがあります。</string>
+  <string name="manual_text_part_3">インストールされているスキン/テクスチャ パック： \nClick \"Change テクスチャ/Skins\"\nYou は、長いインストールするスキンを押して、スキンをインストール可能性があります長い \"Use\"\n\n をクリックしてテクスチャ パック名を押すことによって、テクスチャ パックをインストール可能性があります] をクリックします \"Use\"\nYou してください。</string>
+  <string name="manual_text_part_4">インストール： \nPress device\ の \"Menu\"ボタン/キー クリック \"Apply Changes\「\nConfirm アンインストール。インストール。 \nLaunch Minecraft PE (またはデモ) を確認し、新しい皮膚、テクスチャ パックをお楽しみください ！</string>
+  <?xml version="1.0" encoding="utf-8"?>
+</resources>
