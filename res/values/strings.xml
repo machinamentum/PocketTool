@@ -61,6 +61,9 @@
     <string name="root_not_available">Root access is required on Jellybean devices to use the Toolkit.</string>
     <string name="find_root">Checking for root...</string>
     <string name="enable_root">Enable root mode</string>
+    <string name="ok">OK</string>
+    <string name="goto_settings">Go to Settings</string>
+    <string name="jellybean_warning">PocketTool is known to have issues on Jellybean devices. Some issues include crashing and error -24. If your device is rooted, it is recommended to enable root mode from within PocketTool\'s settings. Proceed at your own risk.</string>
 
 
 </resources>
