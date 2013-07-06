@@ -25,7 +25,7 @@ public class ZipTexturePack {
 	static File assets;
 	static File font;
 	static File gui;
-	static File badge;
+	static File images;
 	static File item;
 	static File mob;
 	static File lang;
@@ -33,6 +33,8 @@ public class ZipTexturePack {
 	static File environment;
 	static File armor;
 	
+	static File images_font;
+	static File badge;
 	
 	static File res;
 	static File drawable;
@@ -55,6 +57,9 @@ public class ZipTexturePack {
 		art = new File(assets, "art/");
 		environment = new File(assets, "environment/");
 		armor = new File(assets, "armor/");
+		images = new File(assets, "images/");
+		
+		images_font = new File(images, "font/");
 		
 		drawable = new File(res, "drawable/");
 		drawable_hdpi = new File(res, "drawable-hdpi/");
@@ -65,13 +70,16 @@ public class ZipTexturePack {
 		assets.mkdirs();
 		font.mkdirs();
 		gui.mkdirs();
-		badge.mkdirs();
+		images.mkdirs();
 		item.mkdirs();
 		mob.mkdirs();
 		lang.mkdirs();
 		art.mkdirs();
 		environment.mkdirs();
 		armor.mkdirs();
+		
+		badge.mkdirs();
+		images_font.mkdirs();
 		
 		res.mkdirs();
 		drawable.mkdirs();
@@ -107,8 +115,6 @@ public class ZipTexturePack {
 			outputFile = new File(assets, "terrain.png");
 		}else if(entry.getName().contains("particles.png")){
 			outputFile = new File(assets, "particles.png");
-		}else if(entry.getName().contains("terrain (2).png")){
-			outputFile = new File(assets, "terrain (2).png");
 		}
 		
 		else if(entry.getName().contains("default.png")){
@@ -116,6 +122,12 @@ public class ZipTexturePack {
 		}else if(entry.getName().contains("default8.png")){
 			outputFile = new File(font, "default8.png");
 		}
+		
+		//use this to generalize the glyph_nn.png files.
+		else if(entry.getName().contains("glyph_") && entry.getName().endsWith(".png")) {
+			outputFile = new File(font, new File(entry.getName()).getName());
+		}
+		
 		//lang
 		else if(entry.getName().contains("en_US.lang")){
 			outputFile = new File(lang, "en_US.lang");
@@ -213,7 +225,11 @@ public class ZipTexturePack {
 
 		else if (entry.getName().contains("clouds.png")) {
 			outputFile = new File(environment, "clouds.png");
-		} 
+		}
+		
+		else if (entry.getName().contains("glyph_sizes.bin")) {
+			outputFile = new File(images_font, "glyph_sizes.bin");
+		}
 		
 		else if(entry.getName().contains("drawable/bg32.png")){
 			outputFile = new File(drawable, "bg32.png");
