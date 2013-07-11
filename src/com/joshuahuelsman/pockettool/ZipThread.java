@@ -12,29 +12,31 @@ package com.joshuahuelsman.pockettool;
 
 import java.io.File;
 import java.io.FileOutputStream;
+import java.util.zip.ZipFile;
 import java.util.zip.ZipOutputStream;
 
 import kellinwood.security.zipsigner.ZipSigner;
+import android.app.AlertDialog;
 
 public class ZipThread extends Thread {
 	File signapk;
 	File tempfold;
 	File newapk;
 	APKManipulation apkm;
-	
-	public ZipThread(APKManipulation apkma, File s, File t, File n){
+
+	public ZipThread(APKManipulation apkma, File s, File t, File n) {
 		signapk = s;
 		tempfold = t;
 		newapk = n;
 		apkm = apkma;
 	}
-	
+
 	@Override
-	public void run(){
+	public void run() {
 		try {
-			//zipu.copyFolder(origfold, tempfold);
-			
-			//addChar(ptfold);
+			// zipu.copyFolder(origfold, tempfold);
+
+			// addChar(ptfold);
 			ZipUtils.deleteDir(new File(tempfold, "META-INF/"));
 			ZipOutputStream zipFolder = new ZipOutputStream(
 					new FileOutputStream(newapk));
@@ -44,15 +46,29 @@ public class ZipThread extends Thread {
 			// t.append("\n" + zipSigner.getKeymode());
 			zipSigner.setKeymode("testkey");
 			zipSigner.signZip(newapk.toString(), signapk.toString());
-			apkm.install();
-			if(Settings.disableUninstall != 1){
-				apkm.uninstall();
+			if (ZipVerifier.verify(new ZipFile(signapk))) {
+				apkm.install();
+				if (Settings.disableUninstall != 1) {
+					apkm.uninstall();
+				}
+			} else {
+				
+				apkm.getActivity().runOnUiThread(new Runnable() {
+					@Override
+					public void run() {
+						AlertDialog.Builder build = new AlertDialog.Builder(apkm.getActivity());
+						build.setMessage(R.string.zip_verifiaction_error);
+						build.setTitle(R.string.apk_install_error);
+						build.setIconAttribute(android.R.attr.alertDialogIcon);
+						build.setCancelable(false);
+						build.setPositiveButton(R.string.ok, null);
+						build.create().show();
+					}
+				});
 			}
 		} catch (Throwable t) {
-		
-			
+
 		}
-		
-		
+
 	}
 }

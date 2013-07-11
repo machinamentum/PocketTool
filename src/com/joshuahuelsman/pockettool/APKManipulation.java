@@ -283,4 +283,12 @@ public class APKManipulation {
 		napkc.delete();
 		napkcs.delete();
 	}
+	
+	/**
+	 * 
+	 * @return the activity that created this APKM object
+	 */
+	public Activity getActivity() {
+		return main;
+	}
 }

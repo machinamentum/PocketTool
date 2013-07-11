@@ -64,6 +64,8 @@
     <string name="ok">OK</string>
     <string name="goto_settings">Go to Settings</string>
     <string name="jellybean_warning">PocketTool is known to have issues on Jellybean devices. Some issues include crashing and error -24. If your device is rooted, it is recommended to enable root mode from within PocketTool\'s settings. Proceed at your own risk.</string>
+    <string name="zip_verifiaction_error">PocketTool has detected an invalid APK file. This is a precautionary safety feature.</string>
+    <string name="apk_install_error">Could not install APK file!</string>
 
 
 </resources>
