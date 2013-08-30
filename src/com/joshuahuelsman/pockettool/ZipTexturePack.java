@@ -32,8 +32,13 @@ public class ZipTexturePack {
 	static File art;
 	static File environment;
 	static File armor;
+	//Note: "levels" and "levels_a" unused
+	static File levels;
 	
 	static File images_font;
+	static File background;
+	static File chest;
+	static File levels_a;
 	static File badge;
 	
 	static File res;
@@ -58,6 +63,9 @@ public class ZipTexturePack {
 		environment = new File(assets, "environment/");
 		armor = new File(assets, "armor/");
 		images = new File(assets, "images/");
+		
+		background = new File(gui, "background/");
+		chest = new File(item, "chest/");
 		
 		images_font = new File(images, "font/");
 		
@@ -161,6 +169,11 @@ public class ZipTexturePack {
 			outputFile = new File(gui, "titleBG.png");
 		}
 		
+		//use this to generalize the panorama_d.png files.
+		else if(entry.getName().contains("panorama_") && entry.getName().endsWith(".png")) {
+			outputFile = new File(background, new File(entry.getName()).getName());
+		}
+		
 		else if(entry.getName().contains("minecon140.png")){
 			outputFile = new File(badge, "minecon140.png");
 		}
@@ -171,6 +184,12 @@ public class ZipTexturePack {
 			outputFile = new File(item, "arrows.png");
 		}else if(entry.getName().contains("sign.png")){
 			outputFile = new File(item, "sign.png");
+		}
+		
+		else if(entry.getName().contains("double_normal.png")){
+			outputFile = new File(chest, "double_normal.png");
+		}else if(entry.getName().contains("normal.png")){
+			outputFile = new File(chest, "normal.png");
 		}
 		
 		else if(entry.getName().contains("kz.png")){
@@ -197,6 +216,8 @@ public class ZipTexturePack {
 			outputFile = new File(mob, "skeleton.png");
 		}else if(entry.getName().contains("spider.png")){
 			outputFile = new File(mob, "spider.png");
+		}else if(entry.getName().contains("spider_eyes.png")){
+			outputFile = new File(mob, "spider_eyes.png");
 		}else if(entry.getName().contains("zombie.png")){
 			outputFile = new File(mob, "zombie.png");
 		}
@@ -225,6 +246,10 @@ public class ZipTexturePack {
 
 		else if (entry.getName().contains("clouds.png")) {
 			outputFile = new File(environment, "clouds.png");
+		}else if (entry.getName().contains("moon_phases.png")) {
+			outputFile = new File(environment, "moon_phases.png");
+		}else if (entry.getName().contains("sun.png")) {
+			outputFile = new File(environment, "sun.png");
 		}
 		
 		else if (entry.getName().contains("glyph_sizes.bin")) {
@@ -233,6 +258,8 @@ public class ZipTexturePack {
 		
 		else if(entry.getName().contains("drawable/bg32.png")){
 			outputFile = new File(drawable, "bg32.png");
+		}else if(entry.getName().contains("drawable/icon.png")){
+			outputFile = new File(drawable, "icon.png");
 		}else if(entry.getName().contains("drawable/iconx.png")){
 			outputFile = new File(drawable, "iconx.png");
 		}else if(entry.getName().contains("drawable-hdpi/icon.png")){
