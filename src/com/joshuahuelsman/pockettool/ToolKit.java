@@ -60,12 +60,14 @@ public class ToolKit extends Activity implements OnClickListener {
 		Button patchmodbutton = (Button)findViewById(R.id.patchmodbutton);
 		Button downloadmcskinbutton = (Button)findViewById(R.id.downloadmcnetskinbutton);
 		Button ippatchbutton = (Button)findViewById(R.id.ippatchbutton);
+		Button directPatchButton = (Button) findViewById(R.id.directpatchbutton);
 		
 		textskinbutton.setOnClickListener(this);
 		patchmodbutton.setOnClickListener(this);
 		
 		ippatchbutton.setOnClickListener(this);
 		downloadmcskinbutton.setOnClickListener(this);
+		directPatchButton.setOnClickListener(this);
 		//Toast.makeText(this, "Minecraft Version Code: " + APKManipulation.minever, Toast.LENGTH_SHORT).show();
 		 dialog = ProgressDialog.show(this, "", 
                 this.getResources().getString(R.string.refreshing_resources), true);
@@ -85,6 +87,9 @@ public class ToolKit extends Activity implements OnClickListener {
 			startActivity(i);
 		}else if(v.getId() == R.id.downloadmcnetskinbutton){
 			Intent i = new Intent(this, DownloadMinecraftNetSkin.class);
+			startActivity(i);
+		} else if (v.getId() == R.id.directpatchbutton) {
+			Intent i = new Intent(this, DirectPatchActivity.class);
 			startActivity(i);
 		}
 		

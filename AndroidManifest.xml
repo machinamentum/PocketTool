@@ -37,6 +37,7 @@
         <activity android:theme="@android:style/Theme.Dialog" android:name="AboutSimpleNBT"></activity>
         <activity android:name="InventoryEditor"></activity>
         <activity android:name="SlotEditor"></activity>
+        <activity android:name="DirectPatchActivity"></activity>
         
         
     </application>
